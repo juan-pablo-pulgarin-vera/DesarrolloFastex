@@ -53,6 +53,12 @@
     <Compile Include="Carrito.Designer.cs">
       <DependentUpon>Carrito.cs</DependentUpon>
     </Compile>
+    <Compile Include="CRUDProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDProductos.Designer.cs">
+      <DependentUpon>CRUDProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pedido.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Carrito.resx">
       <DependentUpon>Carrito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDProductos.resx">
+      <DependentUpon>CRUDProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pedido.resx">
       <DependentUpon>Pedido.cs</DependentUpon>
