@@ -182,5 +182,12 @@ namespace Pedidos
 
         }
 
+        public void puma3()
+        {
+            idproducto.Text = "Eso134";
+            nomzapatos.Text = "Puma stark";
+            valorunid.Text = "100.000";
+
+        }
     }
 }
