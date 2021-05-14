@@ -141,5 +141,18 @@
   <ItemGroup>
     <None Include="Resources\ad_NP_981265-MLV42172162402_062020-W.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-05-10 at 9.16.43 AM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa_Entidad\Capa_Entidad.csproj">
+      <Project>{bfe9bbd9-8c41-459d-90f5-0531122644d8}</Project>
+      <Name>Capa_Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capa_Negocio\Capa_Negocio.csproj">
+      <Project>{936ae9cf-7756-4f7d-8346-09f5347a0c34}</Project>
+      <Name>Capa_Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

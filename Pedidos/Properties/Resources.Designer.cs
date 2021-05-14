@@ -223,6 +223,16 @@ namespace Pedidos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_05_10_at_9_16_43_AM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-05-10 at 9.16.43 AM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap zapatillas_nike {
             get {
                 object obj = ResourceManager.GetObject("zapatillas-nike", resourceCulture);
