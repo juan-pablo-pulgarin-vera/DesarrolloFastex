@@ -36,9 +36,12 @@ namespace Pedidos
             this.laber2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label74 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.laber2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label68 = new System.Windows.Forms.Label();
-            this.button12 = new System.Windows.Forms.Button();
+            this.Nike4 = new System.Windows.Forms.Button();
             this.label69 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
@@ -46,7 +49,7 @@ namespace Pedidos
             this.label73 = new System.Windows.Forms.Label();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.Nike3 = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -54,7 +57,7 @@ namespace Pedidos
             this.label25 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Nike2 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -71,7 +74,7 @@ namespace Pedidos
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label62 = new System.Windows.Forms.Label();
-            this.button11 = new System.Windows.Forms.Button();
+            this.puma4 = new System.Windows.Forms.Button();
             this.label63 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
@@ -79,7 +82,7 @@ namespace Pedidos
             this.label67 = new System.Windows.Forms.Label();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
+            this.puma3 = new System.Windows.Forms.Button();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
@@ -87,7 +90,7 @@ namespace Pedidos
             this.label37 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.puma2 = new System.Windows.Forms.Button();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -95,7 +98,7 @@ namespace Pedidos
             this.label31 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.puma1 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -104,7 +107,7 @@ namespace Pedidos
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label56 = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
+            this.adidas4 = new System.Windows.Forms.Button();
             this.label57 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
@@ -112,7 +115,7 @@ namespace Pedidos
             this.label61 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label38 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
+            this.adidas3 = new System.Windows.Forms.Button();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
@@ -120,7 +123,7 @@ namespace Pedidos
             this.label43 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label44 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
+            this.adidas2 = new System.Windows.Forms.Button();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
@@ -128,7 +131,7 @@ namespace Pedidos
             this.label49 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label50 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
+            this.adidas1 = new System.Windows.Forms.Button();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
@@ -162,8 +165,6 @@ namespace Pedidos
             this.panel1.Controls.Add(this.label74);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.laber2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.ForeColor = System.Drawing.Color.AliceBlue;
             this.panel1.Location = new System.Drawing.Point(-5, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
@@ -202,12 +203,17 @@ namespace Pedidos
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
             // 
             // laber2
             // 
             this.laber2.AutoSize = true;
             this.laber2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.laber2.Location = new System.Drawing.Point(128, 2);
+            this.laber2.Location = new System.Drawing.Point(138, 1);
             this.laber2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.laber2.Name = "laber2";
             this.laber2.Size = new System.Drawing.Size(157, 39);
@@ -241,7 +247,7 @@ namespace Pedidos
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label68);
-            this.groupBox1.Controls.Add(this.button12);
+            this.groupBox1.Controls.Add(this.Nike4);
             this.groupBox1.Controls.Add(this.label69);
             this.groupBox1.Controls.Add(this.label70);
             this.groupBox1.Controls.Add(this.label71);
@@ -249,7 +255,7 @@ namespace Pedidos
             this.groupBox1.Controls.Add(this.label73);
             this.groupBox1.Controls.Add(this.pictureBox14);
             this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Controls.Add(this.button4);
+            this.groupBox1.Controls.Add(this.Nike3);
             this.groupBox1.Controls.Add(this.label21);
             this.groupBox1.Controls.Add(this.label22);
             this.groupBox1.Controls.Add(this.label23);
@@ -257,7 +263,7 @@ namespace Pedidos
             this.groupBox1.Controls.Add(this.label25);
             this.groupBox1.Controls.Add(this.pictureBox6);
             this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.Nike2);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.label17);
@@ -289,15 +295,16 @@ namespace Pedidos
             this.label68.TabIndex = 39;
             this.label68.Text = "Referencia: srclp532";
             // 
-            // button12
+            // Nike4
             // 
-            this.button12.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button12.Location = new System.Drawing.Point(1126, 140);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(200, 36);
-            this.button12.TabIndex = 38;
-            this.button12.Text = "AGREGAR CARRITO";
-            this.button12.UseVisualStyleBackColor = false;
+            this.Nike4.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Nike4.Location = new System.Drawing.Point(1126, 140);
+            this.Nike4.Name = "Nike4";
+            this.Nike4.Size = new System.Drawing.Size(200, 36);
+            this.Nike4.TabIndex = 38;
+            this.Nike4.Text = "AGREGAR CARRITO";
+            this.Nike4.UseVisualStyleBackColor = false;
+            this.Nike4.Click += new System.EventHandler(this.Nike4_Click);
             // 
             // label69
             // 
@@ -362,15 +369,16 @@ namespace Pedidos
             this.label20.TabIndex = 23;
             this.label20.Text = "Referencia: 25y2Aw234";
             // 
-            // button4
+            // Nike3
             // 
-            this.button4.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button4.Location = new System.Drawing.Point(804, 138);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 36);
-            this.button4.TabIndex = 22;
-            this.button4.Text = "AGREGAR CARRITO";
-            this.button4.UseVisualStyleBackColor = false;
+            this.Nike3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Nike3.Location = new System.Drawing.Point(804, 138);
+            this.Nike3.Name = "Nike3";
+            this.Nike3.Size = new System.Drawing.Size(200, 36);
+            this.Nike3.TabIndex = 22;
+            this.Nike3.Text = "AGREGAR CARRITO";
+            this.Nike3.UseVisualStyleBackColor = false;
+            this.Nike3.Click += new System.EventHandler(this.Nike3_Click);
             // 
             // label21
             // 
@@ -435,15 +443,16 @@ namespace Pedidos
             this.label14.TabIndex = 15;
             this.label14.Text = "Referencia: yY3w234";
             // 
-            // button3
+            // Nike2
             // 
-            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button3.Location = new System.Drawing.Point(460, 129);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 36);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "AGREGAR CARRITO";
-            this.button3.UseVisualStyleBackColor = false;
+            this.Nike2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Nike2.Location = new System.Drawing.Point(460, 129);
+            this.Nike2.Name = "Nike2";
+            this.Nike2.Size = new System.Drawing.Size(200, 36);
+            this.Nike2.TabIndex = 14;
+            this.Nike2.Text = "AGREGAR CARRITO";
+            this.Nike2.UseVisualStyleBackColor = false;
+            this.Nike2.Click += new System.EventHandler(this.Nike2_Click);
             // 
             // label15
             // 
@@ -517,6 +526,7 @@ namespace Pedidos
             this.nike1.TabIndex = 6;
             this.nike1.Text = "AGREGAR CARRITO";
             this.nike1.UseVisualStyleBackColor = false;
+            this.nike1.Click += new System.EventHandler(this.nike1_Click);
             // 
             // label6
             // 
@@ -575,7 +585,7 @@ namespace Pedidos
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label62);
-            this.groupBox2.Controls.Add(this.button11);
+            this.groupBox2.Controls.Add(this.puma4);
             this.groupBox2.Controls.Add(this.label63);
             this.groupBox2.Controls.Add(this.label64);
             this.groupBox2.Controls.Add(this.label65);
@@ -583,7 +593,7 @@ namespace Pedidos
             this.groupBox2.Controls.Add(this.label67);
             this.groupBox2.Controls.Add(this.pictureBox13);
             this.groupBox2.Controls.Add(this.label32);
-            this.groupBox2.Controls.Add(this.button6);
+            this.groupBox2.Controls.Add(this.puma3);
             this.groupBox2.Controls.Add(this.label33);
             this.groupBox2.Controls.Add(this.label34);
             this.groupBox2.Controls.Add(this.label35);
@@ -591,7 +601,7 @@ namespace Pedidos
             this.groupBox2.Controls.Add(this.label37);
             this.groupBox2.Controls.Add(this.pictureBox8);
             this.groupBox2.Controls.Add(this.label26);
-            this.groupBox2.Controls.Add(this.button5);
+            this.groupBox2.Controls.Add(this.puma2);
             this.groupBox2.Controls.Add(this.label27);
             this.groupBox2.Controls.Add(this.label28);
             this.groupBox2.Controls.Add(this.label29);
@@ -599,7 +609,7 @@ namespace Pedidos
             this.groupBox2.Controls.Add(this.label31);
             this.groupBox2.Controls.Add(this.pictureBox7);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.puma1);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label11);
@@ -623,15 +633,15 @@ namespace Pedidos
             this.label62.TabIndex = 39;
             this.label62.Text = "Referencia:5865n";
             // 
-            // button11
+            // puma4
             // 
-            this.button11.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button11.Location = new System.Drawing.Point(1126, 158);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(200, 36);
-            this.button11.TabIndex = 38;
-            this.button11.Text = "AGREGAR CARRITO";
-            this.button11.UseVisualStyleBackColor = false;
+            this.puma4.BackColor = System.Drawing.Color.DodgerBlue;
+            this.puma4.Location = new System.Drawing.Point(1126, 158);
+            this.puma4.Name = "puma4";
+            this.puma4.Size = new System.Drawing.Size(200, 36);
+            this.puma4.TabIndex = 38;
+            this.puma4.Text = "AGREGAR CARRITO";
+            this.puma4.UseVisualStyleBackColor = false;
             // 
             // label63
             // 
@@ -696,15 +706,15 @@ namespace Pedidos
             this.label32.TabIndex = 31;
             this.label32.Text = "Referencia: 750wrq";
             // 
-            // button6
+            // puma3
             // 
-            this.button6.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button6.Location = new System.Drawing.Point(804, 158);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(200, 36);
-            this.button6.TabIndex = 30;
-            this.button6.Text = "AGREGAR CARRITO";
-            this.button6.UseVisualStyleBackColor = false;
+            this.puma3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.puma3.Location = new System.Drawing.Point(804, 158);
+            this.puma3.Name = "puma3";
+            this.puma3.Size = new System.Drawing.Size(200, 36);
+            this.puma3.TabIndex = 30;
+            this.puma3.Text = "AGREGAR CARRITO";
+            this.puma3.UseVisualStyleBackColor = false;
             // 
             // label33
             // 
@@ -769,15 +779,16 @@ namespace Pedidos
             this.label26.TabIndex = 23;
             this.label26.Text = "Referencia: Eso134";
             // 
-            // button5
+            // puma2
             // 
-            this.button5.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button5.Location = new System.Drawing.Point(460, 149);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(200, 36);
-            this.button5.TabIndex = 22;
-            this.button5.Text = "AGREGAR CARRITO";
-            this.button5.UseVisualStyleBackColor = false;
+            this.puma2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.puma2.Location = new System.Drawing.Point(460, 149);
+            this.puma2.Name = "puma2";
+            this.puma2.Size = new System.Drawing.Size(200, 36);
+            this.puma2.TabIndex = 22;
+            this.puma2.Text = "AGREGAR CARRITO";
+            this.puma2.UseVisualStyleBackColor = false;
+            this.puma2.Click += new System.EventHandler(this.puma2_Click);
             // 
             // label27
             // 
@@ -842,15 +853,16 @@ namespace Pedidos
             this.label8.TabIndex = 15;
             this.label8.Text = "Referencia: pepw234";
             // 
-            // button2
+            // puma1
             // 
-            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button2.Location = new System.Drawing.Point(108, 143);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 36);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "AGREGAR CARRITO";
-            this.button2.UseVisualStyleBackColor = false;
+            this.puma1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.puma1.Location = new System.Drawing.Point(108, 143);
+            this.puma1.Name = "puma1";
+            this.puma1.Size = new System.Drawing.Size(200, 36);
+            this.puma1.TabIndex = 14;
+            this.puma1.Text = "AGREGAR CARRITO";
+            this.puma1.UseVisualStyleBackColor = false;
+            this.puma1.Click += new System.EventHandler(this.puma1_Click);
             // 
             // label9
             // 
@@ -909,7 +921,7 @@ namespace Pedidos
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label56);
-            this.groupBox3.Controls.Add(this.button10);
+            this.groupBox3.Controls.Add(this.adidas4);
             this.groupBox3.Controls.Add(this.label57);
             this.groupBox3.Controls.Add(this.label58);
             this.groupBox3.Controls.Add(this.label59);
@@ -917,7 +929,7 @@ namespace Pedidos
             this.groupBox3.Controls.Add(this.label61);
             this.groupBox3.Controls.Add(this.pictureBox12);
             this.groupBox3.Controls.Add(this.label38);
-            this.groupBox3.Controls.Add(this.button7);
+            this.groupBox3.Controls.Add(this.adidas3);
             this.groupBox3.Controls.Add(this.label39);
             this.groupBox3.Controls.Add(this.label40);
             this.groupBox3.Controls.Add(this.label41);
@@ -925,7 +937,7 @@ namespace Pedidos
             this.groupBox3.Controls.Add(this.label43);
             this.groupBox3.Controls.Add(this.pictureBox9);
             this.groupBox3.Controls.Add(this.label44);
-            this.groupBox3.Controls.Add(this.button8);
+            this.groupBox3.Controls.Add(this.adidas2);
             this.groupBox3.Controls.Add(this.label45);
             this.groupBox3.Controls.Add(this.label46);
             this.groupBox3.Controls.Add(this.label47);
@@ -933,7 +945,7 @@ namespace Pedidos
             this.groupBox3.Controls.Add(this.label49);
             this.groupBox3.Controls.Add(this.pictureBox10);
             this.groupBox3.Controls.Add(this.label50);
-            this.groupBox3.Controls.Add(this.button9);
+            this.groupBox3.Controls.Add(this.adidas1);
             this.groupBox3.Controls.Add(this.label51);
             this.groupBox3.Controls.Add(this.label52);
             this.groupBox3.Controls.Add(this.label53);
@@ -957,15 +969,15 @@ namespace Pedidos
             this.label56.TabIndex = 39;
             this.label56.Text = "Referencia: xxa231";
             // 
-            // button10
+            // adidas4
             // 
-            this.button10.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button10.Location = new System.Drawing.Point(1126, 160);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(200, 36);
-            this.button10.TabIndex = 38;
-            this.button10.Text = "AGREGAR CARRITO";
-            this.button10.UseVisualStyleBackColor = false;
+            this.adidas4.BackColor = System.Drawing.Color.DodgerBlue;
+            this.adidas4.Location = new System.Drawing.Point(1126, 160);
+            this.adidas4.Name = "adidas4";
+            this.adidas4.Size = new System.Drawing.Size(200, 36);
+            this.adidas4.TabIndex = 38;
+            this.adidas4.Text = "AGREGAR CARRITO";
+            this.adidas4.UseVisualStyleBackColor = false;
             // 
             // label57
             // 
@@ -1030,15 +1042,15 @@ namespace Pedidos
             this.label38.TabIndex = 31;
             this.label38.Text = "Referencia: 2Aw234";
             // 
-            // button7
+            // adidas3
             // 
-            this.button7.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button7.Location = new System.Drawing.Point(792, 156);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(200, 36);
-            this.button7.TabIndex = 30;
-            this.button7.Text = "AGREGAR CARRITO";
-            this.button7.UseVisualStyleBackColor = false;
+            this.adidas3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.adidas3.Location = new System.Drawing.Point(792, 156);
+            this.adidas3.Name = "adidas3";
+            this.adidas3.Size = new System.Drawing.Size(200, 36);
+            this.adidas3.TabIndex = 30;
+            this.adidas3.Text = "AGREGAR CARRITO";
+            this.adidas3.UseVisualStyleBackColor = false;
             // 
             // label39
             // 
@@ -1103,15 +1115,15 @@ namespace Pedidos
             this.label44.TabIndex = 23;
             this.label44.Text = "Referencia: 759uw";
             // 
-            // button8
+            // adidas2
             // 
-            this.button8.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button8.Location = new System.Drawing.Point(460, 149);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(200, 36);
-            this.button8.TabIndex = 22;
-            this.button8.Text = "AGREGAR CARRITO";
-            this.button8.UseVisualStyleBackColor = false;
+            this.adidas2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.adidas2.Location = new System.Drawing.Point(460, 149);
+            this.adidas2.Name = "adidas2";
+            this.adidas2.Size = new System.Drawing.Size(200, 36);
+            this.adidas2.TabIndex = 22;
+            this.adidas2.Text = "AGREGAR CARRITO";
+            this.adidas2.UseVisualStyleBackColor = false;
             // 
             // label45
             // 
@@ -1176,15 +1188,15 @@ namespace Pedidos
             this.label50.TabIndex = 15;
             this.label50.Text = "Referencia: hyQ41";
             // 
-            // button9
+            // adidas1
             // 
-            this.button9.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button9.Location = new System.Drawing.Point(108, 143);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(200, 36);
-            this.button9.TabIndex = 14;
-            this.button9.Text = "AGREGAR CARRITO";
-            this.button9.UseVisualStyleBackColor = false;
+            this.adidas1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.adidas1.Location = new System.Drawing.Point(108, 143);
+            this.adidas1.Name = "adidas1";
+            this.adidas1.Size = new System.Drawing.Size(200, 36);
+            this.adidas1.TabIndex = 14;
+            this.adidas1.Text = "AGREGAR CARRITO";
+            this.adidas1.UseVisualStyleBackColor = false;
             // 
             // label51
             // 
@@ -1288,8 +1300,6 @@ namespace Pedidos
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label laber2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -1302,7 +1312,7 @@ namespace Pedidos
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button Nike3;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
@@ -1310,7 +1320,7 @@ namespace Pedidos
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Nike2;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
@@ -1318,7 +1328,7 @@ namespace Pedidos
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button puma3;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
@@ -1326,7 +1336,7 @@ namespace Pedidos
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button puma2;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
@@ -1334,7 +1344,7 @@ namespace Pedidos
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button puma1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
@@ -1343,7 +1353,7 @@ namespace Pedidos
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button adidas3;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
@@ -1351,7 +1361,7 @@ namespace Pedidos
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button adidas2;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
@@ -1359,7 +1369,7 @@ namespace Pedidos
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button adidas1;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label label53;
@@ -1367,7 +1377,7 @@ namespace Pedidos
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button Nike4;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label71;
@@ -1375,7 +1385,7 @@ namespace Pedidos
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button puma4;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label65;
@@ -1383,7 +1393,7 @@ namespace Pedidos
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button adidas4;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label59;

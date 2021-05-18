@@ -132,6 +132,11 @@
   </data>
   <data name="ad_NP_981265-MLV42172162402_062020-W" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ad_NP_981265-MLV42172162402_062020-W.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="adilf25rhBL._UX575_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\adilf25rhBL._UX575_.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ad_NP_981265-MLV42172162402_062020-W" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ad_NP_981265-MLV42172162402_062020-W.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="png-clipart-button-logo-exit-game-button-blue-game-thumbnail" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-clipart-button-logo-exit-game-button-blue-game-thumbnail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -159,6 +164,8 @@
   </data>
   <data name="login3_Mesa de trabajo 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login3_Mesa de trabajo 1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="puma-2339-3905601-1-product" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\puma-2339-3905601-1-product.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="D_NQ_NP_989542-MCO31535703444_072019-W" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\D_NQ_NP_989542-MCO31535703444_072019-W.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,8 +182,8 @@
   <data name="CRUD cliente_Mesa de trabajo 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CRUD cliente_Mesa de trabajo 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="puma-2339-3905601-1-product" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\puma-2339-3905601-1-product.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ad041996_zapatillas-adidas-tres-lineas-D_NQ_NP_969643-MCO27967194672_082018-F" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ad041996_zapatillas-adidas-tres-lineas-D_NQ_NP_969643-MCO27967194672_082018-F.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="p5f174920b03d8ebdf7661517020c5d0d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\p5f174920b03d8ebdf7661517020c5d0d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -186,5 +193,7 @@
   </data>
   <data name="CRUD cliente1_Mesa de trabajo 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CRUD cliente1_Mesa de trabajo 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WhatsApp Image 2021-05-10 at 9.16.43 AM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2021-05-10 at 9.16.43 AM.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

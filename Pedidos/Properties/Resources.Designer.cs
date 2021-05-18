@@ -276,6 +276,9 @@ namespace Pedidos.Properties {
         internal static System.Drawing.Bitmap Registro_Mesa_de_trabajo_11 {
             get {
                 object obj = ResourceManager.GetObject("Registro_Mesa de trabajo 11", resourceCulture);
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_05_10_at_9_16_43_AM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-05-10 at 9.16.43 AM", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

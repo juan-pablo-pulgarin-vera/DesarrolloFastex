@@ -64,6 +64,11 @@
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="CRUDProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDProductos.Designer.cs">
+      <DependentUpon>CRUDProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Pedido.cs">
       <SubType>Form</SubType>
@@ -87,6 +92,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="CRUDProductos.resx">
+      <DependentUpon>CRUDProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pedido.resx">
       <DependentUpon>Pedido.cs</DependentUpon>
@@ -173,6 +180,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Registro_Mesa de trabajo 1.png" />
+    <None Include="Resources\WhatsApp Image 2021-05-10 at 9.16.43 AM.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Capa_Entidad\Capa_Entidad.csproj">
