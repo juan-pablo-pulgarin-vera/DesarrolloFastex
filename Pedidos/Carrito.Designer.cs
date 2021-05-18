@@ -31,6 +31,8 @@ namespace Pedidos
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.calculadora = new System.Windows.Forms.Button();
             this.telefono = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.flete = new System.Windows.Forms.TextBox();
@@ -76,7 +78,8 @@ namespace Pedidos
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.vende = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -85,7 +88,6 @@ namespace Pedidos
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -101,6 +103,8 @@ namespace Pedidos
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label22);
+            this.groupBox1.Controls.Add(this.calculadora);
             this.groupBox1.Controls.Add(this.telefono);
             this.groupBox1.Controls.Add(this.label19);
             this.groupBox1.Controls.Add(this.flete);
@@ -124,13 +128,34 @@ namespace Pedidos
             this.groupBox1.Margin = new System.Windows.Forms.Padding(5);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(5);
-            this.groupBox1.Size = new System.Drawing.Size(770, 257);
+            this.groupBox1.Size = new System.Drawing.Size(760, 311);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DATOS CLIENTE";
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(483, 273);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(239, 18);
+            this.label22.TabIndex = 42;
+            this.label22.Text = "total = (valor unidad*cantidad)+flete";
+            // 
+            // calculadora
+            // 
+            this.calculadora.Location = new System.Drawing.Point(509, 243);
+            this.calculadora.Name = "calculadora";
+            this.calculadora.Size = new System.Drawing.Size(182, 27);
+            this.calculadora.TabIndex = 19;
+            this.calculadora.Text = "abrir calculadora";
+            this.calculadora.UseVisualStyleBackColor = true;
+            this.calculadora.Click += new System.EventHandler(this.calculadora_Click);
+            // 
             // telefono
             // 
+            this.telefono.Enabled = false;
             this.telefono.Location = new System.Drawing.Point(585, 28);
             this.telefono.Name = "telefono";
             this.telefono.Size = new System.Drawing.Size(164, 26);
@@ -154,6 +179,7 @@ namespace Pedidos
             // 
             // referencia
             // 
+            this.referencia.Enabled = false;
             this.referencia.Location = new System.Drawing.Point(585, 78);
             this.referencia.Name = "referencia";
             this.referencia.Size = new System.Drawing.Size(164, 26);
@@ -168,6 +194,7 @@ namespace Pedidos
             // 
             // direccion
             // 
+            this.direccion.Enabled = false;
             this.direccion.Location = new System.Drawing.Point(212, 222);
             this.direccion.Name = "direccion";
             this.direccion.Size = new System.Drawing.Size(164, 26);
@@ -175,6 +202,7 @@ namespace Pedidos
             // 
             // nombrepersona
             // 
+            this.nombrepersona.Enabled = false;
             this.nombrepersona.Location = new System.Drawing.Point(212, 176);
             this.nombrepersona.Name = "nombrepersona";
             this.nombrepersona.Size = new System.Drawing.Size(164, 26);
@@ -227,6 +255,7 @@ namespace Pedidos
             // 
             // numerodocumento
             // 
+            this.numerodocumento.Enabled = false;
             this.numerodocumento.Location = new System.Drawing.Point(211, 129);
             this.numerodocumento.Name = "numerodocumento";
             this.numerodocumento.Size = new System.Drawing.Size(164, 26);
@@ -251,6 +280,7 @@ namespace Pedidos
             // 
             // idpersona
             // 
+            this.idpersona.Enabled = false;
             this.idpersona.Location = new System.Drawing.Point(211, 74);
             this.idpersona.Name = "idpersona";
             this.idpersona.Size = new System.Drawing.Size(164, 26);
@@ -467,7 +497,7 @@ namespace Pedidos
             this.listar.Name = "listar";
             this.listar.Size = new System.Drawing.Size(743, 232);
             this.listar.TabIndex = 0;
-            
+            this.listar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.listar_CellContentClick);
             // 
             // pictureBox1
             // 
@@ -492,10 +522,11 @@ namespace Pedidos
             // 
             // busca
             // 
-            this.busca.Location = new System.Drawing.Point(228, 20);
+            this.busca.Location = new System.Drawing.Point(202, 20);
             this.busca.Name = "busca";
-            this.busca.Size = new System.Drawing.Size(361, 26);
+            this.busca.Size = new System.Drawing.Size(392, 26);
             this.busca.TabIndex = 39;
+            this.busca.TextChanged += new System.EventHandler(this.busca_TextChanged);
             // 
             // groupBox4
             // 
@@ -519,21 +550,30 @@ namespace Pedidos
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.dataGridView1);
-            this.groupBox5.Location = new System.Drawing.Point(827, 542);
+            this.groupBox5.Controls.Add(this.vende);
+            this.groupBox5.Controls.Add(this.label21);
+            this.groupBox5.Location = new System.Drawing.Point(806, 539);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(524, 195);
+            this.groupBox5.Size = new System.Drawing.Size(510, 135);
             this.groupBox5.TabIndex = 41;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "LISTA PEDIDO";
+            this.groupBox5.Text = "INFORMACIÓN ADICIONAL";
             // 
-            // dataGridView1
+            // vende
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 25);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(497, 164);
-            this.dataGridView1.TabIndex = 1;
+            this.vende.Location = new System.Drawing.Point(297, 61);
+            this.vende.Name = "vende";
+            this.vende.Size = new System.Drawing.Size(195, 26);
+            this.vende.TabIndex = 1;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(33, 67);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(248, 20);
+            this.label21.TabIndex = 0;
+            this.label21.Text = "Ingrese nombre del vendedor:";
             // 
             // Carrito
             // 
@@ -566,7 +606,7 @@ namespace Pedidos
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -621,6 +661,9 @@ namespace Pedidos
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox vende;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Button calculadora;
+        private System.Windows.Forms.Label label22;
     }
 }

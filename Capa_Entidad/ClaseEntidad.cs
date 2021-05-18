@@ -29,6 +29,7 @@ namespace Capa_Entidad
         public string opcion { get; set; }
        
         public string accion { get; set; }
+        public string vendedor { get; set; }
     }
 
     public class ClaseEntidadDairo
