@@ -62,9 +62,10 @@
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+	 <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
-    <Compile Include="CRUDProductos.cs">
+	 </Compile>
+	<Compile Include="CRUDProductos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CRUDProductos.Designer.cs">
@@ -92,7 +93,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    <EmbeddedResource Include="CRUDProductos.resx">
+	</EmbeddedResource>
+	<EmbeddedResource Include="CRUDProductos.resx">
       <DependentUpon>CRUDProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pedido.resx">
