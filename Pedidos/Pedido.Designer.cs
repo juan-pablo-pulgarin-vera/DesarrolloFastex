@@ -30,6 +30,12 @@ namespace Pedidos
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btlVendedor = new System.Windows.Forms.Button();
+            this.label74 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.laber2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label74 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.laber2 = new System.Windows.Forms.Label();
@@ -134,6 +140,7 @@ namespace Pedidos
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -154,6 +161,7 @@ namespace Pedidos
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel1.Controls.Add(this.btlVendedor);
             this.panel1.Controls.Add(this.label74);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.laber2);
@@ -163,6 +171,17 @@ namespace Pedidos
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1393, 48);
             this.panel1.TabIndex = 0;
+            // 
+            // btlVendedor
+            // 
+            this.btlVendedor.ForeColor = System.Drawing.Color.Black;
+            this.btlVendedor.Location = new System.Drawing.Point(1180, 17);
+            this.btlVendedor.Name = "btlVendedor";
+            this.btlVendedor.Size = new System.Drawing.Size(79, 23);
+            this.btlVendedor.TabIndex = 5;
+            this.btlVendedor.Text = "Vendedor";
+            this.btlVendedor.UseVisualStyleBackColor = true;
+            this.btlVendedor.Click += new System.EventHandler(this.btlVendedor_Click);
             // 
             // label74
             // 
@@ -176,6 +195,14 @@ namespace Pedidos
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = global::Pedidos.Properties.Resources.kisspng_computer_icons_close_icon_5b26727cb43f44_4350255015292463327383;
+            this.pictureBox2.Location = new System.Drawing.Point(1322, 11);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(40, 31);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 50);
@@ -192,6 +219,30 @@ namespace Pedidos
             this.laber2.Size = new System.Drawing.Size(157, 39);
             this.laber2.TabIndex = 2;
             this.laber2.Text = "FASTEX";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(530, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Ir a carrito";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Pedidos.Properties.Resources._107831;
+            this.pictureBox1.Location = new System.Drawing.Point(616, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(41, 31);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // groupBox1
             // 
@@ -1218,9 +1269,11 @@ namespace Pedidos
             this.Name = "Formpe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ZAPATOS ";
+            this.Load += new System.EventHandler(this.Formpe_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
@@ -1348,6 +1401,7 @@ namespace Pedidos
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Button btlVendedor;
     }
 }
 

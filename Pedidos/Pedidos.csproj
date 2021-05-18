@@ -53,6 +53,17 @@
     <Compile Include="Carrito.Designer.cs">
       <DependentUpon>Carrito.cs</DependentUpon>
     </Compile>
+    <Compile Include="CRUD Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD Clientes.Designer.cs">
+      <DependentUpon>CRUD Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     <Compile Include="CRUDProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,9 +78,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar.Designer.cs">
+      <DependentUpon>Registrar.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Carrito.resx">
       <DependentUpon>Carrito.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CRUD Clientes.resx">
+      <DependentUpon>CRUD Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     <EmbeddedResource Include="CRUDProductos.resx">
       <DependentUpon>CRUDProductos.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +108,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Registrar.resx">
+      <DependentUpon>Registrar.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -151,6 +176,10 @@
     <None Include="Resources\ad_NP_981265-MLV42172162402_062020-W.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\login3_Mesa de trabajo 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registro_Mesa de trabajo 1.png" />
     <None Include="Resources\WhatsApp Image 2021-05-10 at 9.16.43 AM.jpeg" />
   </ItemGroup>
   <ItemGroup>
@@ -162,6 +191,18 @@
       <Project>{936ae9cf-7756-4f7d-8346-09f5347a0c34}</Project>
       <Name>Capa_Negocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registro_Mesa de trabajo 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CRUD cliente_Mesa de trabajo 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CRUD cliente_Mesa de trabajo 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CRUD cliente1_Mesa de trabajo 1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
