@@ -143,6 +143,36 @@ namespace Pedidos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CRUD_cliente_Mesa_de_trabajo_1 {
+            get {
+                object obj = ResourceManager.GetObject("CRUD cliente_Mesa de trabajo 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CRUD_cliente_Mesa_de_trabajo_11 {
+            get {
+                object obj = ResourceManager.GetObject("CRUD cliente_Mesa de trabajo 11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CRUD_cliente1_Mesa_de_trabajo_1 {
+            get {
+                object obj = ResourceManager.GetObject("CRUD cliente1_Mesa de trabajo 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap D_NQ_NP_989542_MCO31535703444_072019_W {
             get {
                 object obj = ResourceManager.GetObject("D_NQ_NP_989542-MCO31535703444_072019-W", resourceCulture);
@@ -156,6 +186,16 @@ namespace Pedidos.Properties {
         internal static System.Drawing.Bitmap kisspng_computer_icons_close_icon_5b26727cb43f44_4350255015292463327383 {
             get {
                 object obj = ResourceManager.GetObject("kisspng-computer-icons-close-icon-5b26727cb43f44.4350255015292463327383", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap login3_Mesa_de_trabajo_1 {
+            get {
+                object obj = ResourceManager.GetObject("login3_Mesa de trabajo 1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +256,26 @@ namespace Pedidos.Properties {
         internal static System.Drawing.Bitmap puma_2339_3905601_1_product1 {
             get {
                 object obj = ResourceManager.GetObject("puma-2339-3905601-1-product1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Registro_Mesa_de_trabajo_1 {
+            get {
+                object obj = ResourceManager.GetObject("Registro_Mesa de trabajo 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Registro_Mesa_de_trabajo_11 {
+            get {
+                object obj = ResourceManager.GetObject("Registro_Mesa de trabajo 11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
