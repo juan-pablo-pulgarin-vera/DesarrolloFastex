@@ -40,6 +40,27 @@ namespace Pedidos
             car.Show();
         }
 
-       
+        private void Formpe_Load(object sender, EventArgs e)
+        {
+            if (Login.area == "Vendedor")
+
+            {
+                btlVendedor.Enabled = true;
+
+            }
+
+
+            else if (Login.area == "Cliente")
+
+            {
+                btlVendedor.Enabled = false;
+
+            }
+        }
+
+        private void btlVendedor_Click(object sender, EventArgs e)
+        {
+            Application.Run(new CRUD_Clientes());
+        }
     }
 }

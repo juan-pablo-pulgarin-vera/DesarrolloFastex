@@ -48,7 +48,7 @@ namespace Pedidos
                 login.ShowDialog();
 
                 if (login.DialogResult == DialogResult.OK)
-                    Application.Run(new CRUD_Clientes());
+                    Application.Run(new Formpe());
                 
                
 
@@ -71,6 +71,14 @@ namespace Pedidos
         {
             p_logueo();
             
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Registrar form = new Registrar();
+            form.Show();
+
+            Login form1 = new Login();
         }
     }
 }

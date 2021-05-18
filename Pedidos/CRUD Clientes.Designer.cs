@@ -55,6 +55,7 @@ namespace Pedidos
             // 
             // textBoxIDCRUD
             // 
+            this.textBoxIDCRUD.Enabled = false;
             this.textBoxIDCRUD.Location = new System.Drawing.Point(75, 192);
             this.textBoxIDCRUD.Name = "textBoxIDCRUD";
             this.textBoxIDCRUD.Size = new System.Drawing.Size(139, 20);

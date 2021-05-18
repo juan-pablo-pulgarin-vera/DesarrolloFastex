@@ -48,6 +48,7 @@ namespace Pedidos
             this.textBoxContrasenaLogin.Location = new System.Drawing.Point(407, 371);
             this.textBoxContrasenaLogin.Multiline = true;
             this.textBoxContrasenaLogin.Name = "textBoxContrasenaLogin";
+            this.textBoxContrasenaLogin.PasswordChar = '*';
             this.textBoxContrasenaLogin.Size = new System.Drawing.Size(253, 20);
             this.textBoxContrasenaLogin.TabIndex = 1;
             // 
@@ -69,6 +70,7 @@ namespace Pedidos
             this.button2.TabIndex = 3;
             this.button2.Text = "Registrar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Login
             // 

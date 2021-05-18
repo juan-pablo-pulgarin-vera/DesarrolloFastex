@@ -66,20 +66,7 @@ namespace Pedidos
         {
             dataGridCRUDCliente.DataSource = objneg.N_listar_clientesCRUD();
 
-            if (Login.area == "Vendedor")
-
-            {
-                btlVendedor.Enabled = true;
             
-            }
-
-           
-            else if (Login.area == "Cliente")
-
-            {
-                btlVendedor.Enabled = false;
-        
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -144,22 +131,26 @@ namespace Pedidos
 
         private void dataGridCRUDCliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            int fila = dataGridCRUDCliente.CurrentCell.RowIndex;
 
-            textBoxIDCRUD.Text = dataGridCRUDCliente[0, fila].Value.ToString(); 
-            textBoxTipoDocuementoCRUD.Text = dataGridCRUDCliente[1, fila].Value.ToString(); 
-            textBoxNDocumentoCRUD.Text = dataGridCRUDCliente[2, fila].Value.ToString(); 
-            textBoxFechaNacimientoCRUD.Text = dataGridCRUDCliente[3, fila].Value.ToString(); 
-            textBoxNombreCRUD.Text = dataGridCRUDCliente[4, fila].Value.ToString(); 
-            textBoxEmailCRUD.Text = dataGridCRUDCliente[5, fila].Value.ToString(); 
-            textBoxCiudadCRUD.Text = dataGridCRUDCliente[6, fila].Value.ToString(); 
-            textBoxPaisCRUD.Text = dataGridCRUDCliente[7, fila].Value.ToString(); 
-            textBoxDepartamentoCRUD.Text = dataGridCRUDCliente[8, fila].Value.ToString(); 
-            textBoxDireccionCRUD.Text = dataGridCRUDCliente[9, fila].Value.ToString(); 
-            textBoxTelefonoCRUD.Text = dataGridCRUDCliente[10, fila].Value.ToString(); 
-            textBoxCargoCRUD.Text = dataGridCRUDCliente[11, fila].Value.ToString(); 
-            textBoxContrasenaCRUD.Text = dataGridCRUDCliente[12, fila].Value.ToString(); 
-            textBoxTipoPersonaCRUD.Text = dataGridCRUDCliente[13, fila].Value.ToString(); 
+            if (dataGridCRUDCliente.RowCount != 0)
+            {
+                int fila = dataGridCRUDCliente.CurrentCell.RowIndex;
+
+                textBoxIDCRUD.Text = dataGridCRUDCliente[0, fila].Value.ToString();
+                textBoxTipoDocuementoCRUD.Text = dataGridCRUDCliente[1, fila].Value.ToString();
+                textBoxNDocumentoCRUD.Text = dataGridCRUDCliente[2, fila].Value.ToString();
+                textBoxFechaNacimientoCRUD.Text = dataGridCRUDCliente[3, fila].Value.ToString();
+                textBoxNombreCRUD.Text = dataGridCRUDCliente[4, fila].Value.ToString();
+                textBoxEmailCRUD.Text = dataGridCRUDCliente[5, fila].Value.ToString();
+                textBoxCiudadCRUD.Text = dataGridCRUDCliente[6, fila].Value.ToString();
+                textBoxPaisCRUD.Text = dataGridCRUDCliente[7, fila].Value.ToString();
+                textBoxDepartamentoCRUD.Text = dataGridCRUDCliente[8, fila].Value.ToString();
+                textBoxDireccionCRUD.Text = dataGridCRUDCliente[9, fila].Value.ToString();
+                textBoxTelefonoCRUD.Text = dataGridCRUDCliente[10, fila].Value.ToString();
+                textBoxCargoCRUD.Text = dataGridCRUDCliente[11, fila].Value.ToString();
+                textBoxContrasenaCRUD.Text = dataGridCRUDCliente[12, fila].Value.ToString();
+                textBoxTipoPersonaCRUD.Text = dataGridCRUDCliente[13, fila].Value.ToString();
+            }
         }
     }
 }
