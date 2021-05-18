@@ -30,8 +30,8 @@ namespace Pedidos
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.exit = new System.Windows.Forms.PictureBox();
             this.label74 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.laber2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label68 = new System.Windows.Forms.Label();
@@ -133,7 +133,7 @@ namespace Pedidos
             this.label55 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -154,8 +154,8 @@ namespace Pedidos
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel1.Controls.Add(this.exit);
             this.panel1.Controls.Add(this.label74);
-            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.laber2);
             this.panel1.ForeColor = System.Drawing.Color.AliceBlue;
             this.panel1.Location = new System.Drawing.Point(-5, 0);
@@ -164,23 +164,26 @@ namespace Pedidos
             this.panel1.Size = new System.Drawing.Size(1393, 48);
             this.panel1.TabIndex = 0;
             // 
+            // exit
+            // 
+            this.exit.Image = global::Pedidos.Properties.Resources.kisspng_computer_icons_close_icon_5b26727cb43f44_4350255015292463327383;
+            this.exit.Location = new System.Drawing.Point(1310, 9);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(33, 28);
+            this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.exit.TabIndex = 7;
+            this.exit.TabStop = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
+            // 
             // label74
             // 
             this.label74.AutoSize = true;
             this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label74.Location = new System.Drawing.Point(19, 17);
+            this.label74.Location = new System.Drawing.Point(24, 9);
             this.label74.Name = "label74";
             this.label74.Size = new System.Drawing.Size(117, 20);
             this.label74.TabIndex = 4;
             this.label74.Text = "Bienvenido a ";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
             // 
             // laber2
             // 
@@ -591,6 +594,7 @@ namespace Pedidos
             this.puma4.TabIndex = 38;
             this.puma4.Text = "AGREGAR CARRITO";
             this.puma4.UseVisualStyleBackColor = false;
+            this.puma4.Click += new System.EventHandler(this.puma4_Click);
             // 
             // label63
             // 
@@ -664,6 +668,7 @@ namespace Pedidos
             this.puma3.TabIndex = 30;
             this.puma3.Text = "AGREGAR CARRITO";
             this.puma3.UseVisualStyleBackColor = false;
+            this.puma3.Click += new System.EventHandler(this.puma3_Click);
             // 
             // label33
             // 
@@ -927,6 +932,7 @@ namespace Pedidos
             this.adidas4.TabIndex = 38;
             this.adidas4.Text = "AGREGAR CARRITO";
             this.adidas4.UseVisualStyleBackColor = false;
+            this.adidas4.Click += new System.EventHandler(this.adidas4_Click);
             // 
             // label57
             // 
@@ -1000,6 +1006,7 @@ namespace Pedidos
             this.adidas3.TabIndex = 30;
             this.adidas3.Text = "AGREGAR CARRITO";
             this.adidas3.UseVisualStyleBackColor = false;
+            this.adidas3.Click += new System.EventHandler(this.adidas3_Click);
             // 
             // label39
             // 
@@ -1073,6 +1080,7 @@ namespace Pedidos
             this.adidas2.TabIndex = 22;
             this.adidas2.Text = "AGREGAR CARRITO";
             this.adidas2.UseVisualStyleBackColor = false;
+            this.adidas2.Click += new System.EventHandler(this.adidas2_Click);
             // 
             // label45
             // 
@@ -1146,6 +1154,7 @@ namespace Pedidos
             this.adidas1.TabIndex = 14;
             this.adidas1.Text = "AGREGAR CARRITO";
             this.adidas1.UseVisualStyleBackColor = false;
+            this.adidas1.Click += new System.EventHandler(this.adidas1_Click);
             // 
             // label51
             // 
@@ -1220,7 +1229,7 @@ namespace Pedidos
             this.Text = "ZAPATOS ";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
@@ -1247,7 +1256,6 @@ namespace Pedidos
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label laber2;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -1348,6 +1356,7 @@ namespace Pedidos
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.PictureBox exit;
     }
 }
 

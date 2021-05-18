@@ -16,6 +16,31 @@ namespace Capa_Datos
     public class ClaseDatosJuanpablo
     {
         SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["cnn"].ConnectionString);
+
+        public DataTable d_listar_pedido() 
+        {
+            SqlCommand cmd = new SqlCommand("sp_listar_pedido", cn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        
+        }
+
+
+        
+        public DataTable d_buscar_pedido(claseEntidadJuanpablo obje)
+        {
+            SqlCommand cmd = new SqlCommand("sp_buscar_pedido", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("Nombre",obje.nombre); 
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+
+        }
+        
         public string D_mantenimiento_pedido(claseEntidadJuanpablo obje)
         {
             string opcion = "";
@@ -47,14 +72,16 @@ namespace Capa_Datos
             string accion = "";
             SqlCommand cmd = new SqlCommand("sp_mantenimiento_Detallespedido", cn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@IdDetallePedido", obje.idpedido);
+            cmd.Parameters.AddWithValue("@IdDetallePedido", obje.iddetalle);
             cmd.Parameters.AddWithValue("@IdPedido", obje.idpedido2);
             cmd.Parameters.AddWithValue("@IdProducto", obje.idproducto);
             cmd.Parameters.AddWithValue("@MarcaProducto", obje.marca);
             cmd.Parameters.AddWithValue("@Color", obje.color);
-            cmd.Parameters.AddWithValue("@Cantidad", obje.color);
+            cmd.Parameters.AddWithValue("@Cantidad", obje.catidad);
             cmd.Parameters.AddWithValue("@Talla", obje.talla);
             cmd.Parameters.AddWithValue("@ValorUnidad", obje.valoreUnidad);
+            cmd.Parameters.AddWithValue("@vendedor", obje.vendedor);
+            cmd.Parameters.AddWithValue("@total", obje.total);
             cmd.Parameters.Add("@accion", SqlDbType.VarChar, 50).Value = obje.accion;
             cmd.Parameters["@accion"].Direction = ParameterDirection.InputOutput;
             if (cn.State == ConnectionState.Open) cn.Close();
@@ -63,6 +90,8 @@ namespace Capa_Datos
             accion = cmd.Parameters["@accion"].Value.ToString();
             cn.Close();
             return accion;
+           
+
 
         }
     }

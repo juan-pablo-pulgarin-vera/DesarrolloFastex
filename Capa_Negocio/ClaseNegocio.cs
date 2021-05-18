@@ -15,6 +15,19 @@ namespace Capa_Negocio
     public class ClaseNegocioJuanpablo
     {
         ClaseDatosJuanpablo objd = new ClaseDatosJuanpablo();
+
+        
+        public DataTable N_listar_pedidos()
+        {
+            return objd.d_listar_pedido();
+
+        }
+
+        public DataTable N_buscar_pedidos(claseEntidadJuanpablo obje) 
+        {
+
+            return objd.d_buscar_pedido(obje);
+        }
         public string N_mantenimiento_pedido(claseEntidadJuanpablo obje)
         {
             return objd.D_mantenimiento_pedido(obje);
