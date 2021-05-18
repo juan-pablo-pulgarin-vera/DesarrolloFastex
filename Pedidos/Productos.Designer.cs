@@ -1,7 +1,7 @@
 ﻿
 namespace Pedidos
 {
-    partial class lblIdentificadorproducto
+    partial class productos
     {
         /// <summary>
         /// Required designer variable.
@@ -29,42 +29,40 @@ namespace Pedidos
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(lblIdentificadorproducto));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(productos));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pcbSalir = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gbxDetallesproductos = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPreciounidad = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtMarca = new System.Windows.Forms.TextBox();
+            this.txtTalla = new System.Windows.Forms.TextBox();
+            this.txtColor = new System.Windows.Forms.TextBox();
+            this.txtIdentificador = new System.Windows.Forms.TextBox();
             this.lblColorproducto = new System.Windows.Forms.Label();
             this.lblpreciounidad = new System.Windows.Forms.Label();
             this.lblTallaproducto = new System.Windows.Forms.Label();
             this.lblMarcaProducto = new System.Windows.Forms.Label();
             this.lblNombreproducto = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewProductos = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtBuscarnombreproducto = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.bttnNuevo = new System.Windows.Forms.Button();
             this.bttnModificar = new System.Windows.Forms.Button();
             this.bttnRegistrar = new System.Windows.Forms.Button();
             this.bttnEliminar = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSalir)).BeginInit();
             this.gbxDetallesproductos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -90,6 +88,7 @@ namespace Pedidos
             this.pcbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbSalir.TabIndex = 1;
             this.pcbSalir.TabStop = false;
+            this.pcbSalir.Click += new System.EventHandler(this.pcbSalir_Click);
             // 
             // label1
             // 
@@ -103,13 +102,12 @@ namespace Pedidos
             // 
             // gbxDetallesproductos
             // 
-            this.gbxDetallesproductos.Controls.Add(this.pictureBox2);
-            this.gbxDetallesproductos.Controls.Add(this.textBox6);
-            this.gbxDetallesproductos.Controls.Add(this.textBox5);
-            this.gbxDetallesproductos.Controls.Add(this.textBox4);
-            this.gbxDetallesproductos.Controls.Add(this.textBox3);
-            this.gbxDetallesproductos.Controls.Add(this.textBox2);
-            this.gbxDetallesproductos.Controls.Add(this.textBox1);
+            this.gbxDetallesproductos.Controls.Add(this.txtPreciounidad);
+            this.gbxDetallesproductos.Controls.Add(this.txtNombre);
+            this.gbxDetallesproductos.Controls.Add(this.txtMarca);
+            this.gbxDetallesproductos.Controls.Add(this.txtTalla);
+            this.gbxDetallesproductos.Controls.Add(this.txtColor);
+            this.gbxDetallesproductos.Controls.Add(this.txtIdentificador);
             this.gbxDetallesproductos.Controls.Add(this.lblColorproducto);
             this.gbxDetallesproductos.Controls.Add(this.lblpreciounidad);
             this.gbxDetallesproductos.Controls.Add(this.lblTallaproducto);
@@ -124,59 +122,59 @@ namespace Pedidos
             this.gbxDetallesproductos.TabStop = false;
             this.gbxDetallesproductos.Text = "Detalles productos ";
             // 
-            // textBox6
+            // txtPreciounidad
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Location = new System.Drawing.Point(140, 279);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(256, 25);
-            this.textBox6.TabIndex = 11;
+            this.txtPreciounidad.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtPreciounidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPreciounidad.Location = new System.Drawing.Point(140, 279);
+            this.txtPreciounidad.Name = "txtPreciounidad";
+            this.txtPreciounidad.Size = new System.Drawing.Size(256, 25);
+            this.txtPreciounidad.TabIndex = 11;
             // 
-            // textBox5
+            // txtNombre
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(140, 74);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(256, 25);
-            this.textBox5.TabIndex = 10;
+            this.txtNombre.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNombre.Location = new System.Drawing.Point(140, 74);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(256, 25);
+            this.txtNombre.TabIndex = 10;
             // 
-            // textBox4
+            // txtMarca
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(140, 130);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(256, 25);
-            this.textBox4.TabIndex = 9;
+            this.txtMarca.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtMarca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMarca.Location = new System.Drawing.Point(140, 130);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(256, 25);
+            this.txtMarca.TabIndex = 9;
             // 
-            // textBox3
+            // txtTalla
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(140, 179);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(256, 25);
-            this.textBox3.TabIndex = 8;
+            this.txtTalla.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtTalla.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTalla.Location = new System.Drawing.Point(140, 179);
+            this.txtTalla.Name = "txtTalla";
+            this.txtTalla.Size = new System.Drawing.Size(256, 25);
+            this.txtTalla.TabIndex = 8;
             // 
-            // textBox2
+            // txtColor
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(140, 235);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(256, 25);
-            this.textBox2.TabIndex = 7;
+            this.txtColor.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtColor.Location = new System.Drawing.Point(140, 235);
+            this.txtColor.Name = "txtColor";
+            this.txtColor.Size = new System.Drawing.Size(256, 25);
+            this.txtColor.TabIndex = 7;
             // 
-            // textBox1
+            // txtIdentificador
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(140, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(256, 25);
-            this.textBox1.TabIndex = 6;
+            this.txtIdentificador.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtIdentificador.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtIdentificador.Location = new System.Drawing.Point(140, 26);
+            this.txtIdentificador.Name = "txtIdentificador";
+            this.txtIdentificador.Size = new System.Drawing.Size(256, 25);
+            this.txtIdentificador.TabIndex = 6;
             // 
             // lblColorproducto
             // 
@@ -232,19 +230,20 @@ namespace Pedidos
             this.label2.TabIndex = 0;
             this.label2.Text = "Identificador:";
             // 
-            // dataGridView1
+            // dataGridViewProductos
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 27);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(790, 393);
-            this.dataGridView1.TabIndex = 2;
+            this.dataGridViewProductos.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dataGridViewProductos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridViewProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewProductos.Location = new System.Drawing.Point(6, 27);
+            this.dataGridViewProductos.Name = "dataGridViewProductos";
+            this.dataGridViewProductos.Size = new System.Drawing.Size(790, 393);
+            this.dataGridViewProductos.TabIndex = 2;
+            this.dataGridViewProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProductos_CellContentClick);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.dataGridViewProductos);
             this.groupBox1.Font = new System.Drawing.Font("Bell MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(522, 245);
             this.groupBox1.Name = "groupBox1";
@@ -265,7 +264,7 @@ namespace Pedidos
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.txtBuscarnombreproducto);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Font = new System.Drawing.Font("Bell MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(522, 118);
@@ -275,14 +274,15 @@ namespace Pedidos
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Buscar";
             // 
-            // textBox7
+            // txtBuscarnombreproducto
             // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Location = new System.Drawing.Point(179, 44);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(404, 29);
-            this.textBox7.TabIndex = 1;
+            this.txtBuscarnombreproducto.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtBuscarnombreproducto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBuscarnombreproducto.Location = new System.Drawing.Point(179, 44);
+            this.txtBuscarnombreproducto.Name = "txtBuscarnombreproducto";
+            this.txtBuscarnombreproducto.Size = new System.Drawing.Size(404, 29);
+            this.txtBuscarnombreproducto.TabIndex = 1;
+            this.txtBuscarnombreproducto.TextChanged += new System.EventHandler(this.txtBuscarnombreproducto_TextChanged);
             // 
             // label3
             // 
@@ -304,6 +304,7 @@ namespace Pedidos
             this.bttnNuevo.TabIndex = 7;
             this.bttnNuevo.Text = "Nuevo";
             this.bttnNuevo.UseVisualStyleBackColor = false;
+            this.bttnNuevo.Click += new System.EventHandler(this.bttnNuevo_Click);
             // 
             // bttnModificar
             // 
@@ -316,6 +317,7 @@ namespace Pedidos
             this.bttnModificar.TabIndex = 8;
             this.bttnModificar.Text = "Modificar";
             this.bttnModificar.UseVisualStyleBackColor = false;
+            this.bttnModificar.Click += new System.EventHandler(this.bttnModificar_Click);
             // 
             // bttnRegistrar
             // 
@@ -328,6 +330,7 @@ namespace Pedidos
             this.bttnRegistrar.TabIndex = 9;
             this.bttnRegistrar.Text = "Registrar";
             this.bttnRegistrar.UseVisualStyleBackColor = false;
+            this.bttnRegistrar.Click += new System.EventHandler(this.bttnRegistrar_Click);
             // 
             // bttnEliminar
             // 
@@ -340,16 +343,9 @@ namespace Pedidos
             this.bttnEliminar.TabIndex = 10;
             this.bttnEliminar.Text = "Eliminar";
             this.bttnEliminar.UseVisualStyleBackColor = false;
+            this.bttnEliminar.Click += new System.EventHandler(this.bttnEliminar_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(6, 26);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(18, 23);
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
-            // 
-            // lblIdentificadorproducto
+            // productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -364,19 +360,18 @@ namespace Pedidos
             this.Controls.Add(this.gbxDetallesproductos);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "lblIdentificadorproducto";
-            this.Text = "ccccccc";
+            this.Name = "productos";
+            this.Load += new System.EventHandler(this.productos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSalir)).EndInit();
             this.gbxDetallesproductos.ResumeLayout(false);
             this.gbxDetallesproductos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -393,22 +388,21 @@ namespace Pedidos
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblColorproducto;
         private System.Windows.Forms.Label lblpreciounidad;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewProductos;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPreciounidad;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtMarca;
+        private System.Windows.Forms.TextBox txtTalla;
+        private System.Windows.Forms.TextBox txtColor;
+        private System.Windows.Forms.TextBox txtIdentificador;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtBuscarnombreproducto;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button bttnNuevo;
         private System.Windows.Forms.Button bttnModificar;
         private System.Windows.Forms.Button bttnRegistrar;
         private System.Windows.Forms.Button bttnEliminar;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
