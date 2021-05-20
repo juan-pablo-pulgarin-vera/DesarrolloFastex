@@ -48,9 +48,10 @@ namespace Pedidos
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.dataGridCRUDCliente = new System.Windows.Forms.DataGridView();
-            this.btlVendedor = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridCRUDCliente)).BeginInit();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lista = new System.Windows.Forms.DataGridView();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lista)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxIDCRUD
@@ -209,24 +210,26 @@ namespace Pedidos
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // dataGridCRUDCliente
+            // groupBox1
             // 
-            this.dataGridCRUDCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridCRUDCliente.Location = new System.Drawing.Point(24, 461);
-            this.dataGridCRUDCliente.Name = "dataGridCRUDCliente";
-            this.dataGridCRUDCliente.Size = new System.Drawing.Size(772, 228);
-            this.dataGridCRUDCliente.TabIndex = 20;
-            this.dataGridCRUDCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridCRUDCliente_CellContentClick);
+            this.groupBox1.Controls.Add(this.lista);
+            this.groupBox1.Location = new System.Drawing.Point(36, 484);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(772, 210);
+            this.groupBox1.TabIndex = 20;
+            this.groupBox1.TabStop = false;
             // 
-            // btlVendedor
+            // lista
             // 
-            this.btlVendedor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btlVendedor.Location = new System.Drawing.Point(1208, 49);
-            this.btlVendedor.Name = "btlVendedor";
-            this.btlVendedor.Size = new System.Drawing.Size(75, 23);
-            this.btlVendedor.TabIndex = 21;
-            this.btlVendedor.Text = "Vendedor";
-            this.btlVendedor.UseVisualStyleBackColor = true;
+            this.lista.AllowUserToAddRows = false;
+            this.lista.AllowUserToDeleteRows = false;
+            this.lista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.lista.Location = new System.Drawing.Point(6, 19);
+            this.lista.Name = "lista";
+            this.lista.ReadOnly = true;
+            this.lista.Size = new System.Drawing.Size(747, 169);
+            this.lista.TabIndex = 0;
+            this.lista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.lista_CellContentClick);
             // 
             // CRUD_Clientes
             // 
@@ -235,8 +238,7 @@ namespace Pedidos
             this.BackgroundImage = global::Pedidos.Properties.Resources.CRUD_cliente1_Mesa_de_trabajo_1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1350, 729);
-            this.Controls.Add(this.btlVendedor);
-            this.Controls.Add(this.dataGridCRUDCliente);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -260,7 +262,8 @@ namespace Pedidos
             this.Name = "CRUD_Clientes";
             this.Text = "CRUD_Clientes";
             this.Load += new System.EventHandler(this.CRUD_Clientes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridCRUDCliente)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lista)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,7 +289,7 @@ namespace Pedidos
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView dataGridCRUDCliente;
-        private System.Windows.Forms.Button btlVendedor;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView lista;
     }
 }

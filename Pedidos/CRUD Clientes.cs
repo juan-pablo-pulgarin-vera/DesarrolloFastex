@@ -62,12 +62,7 @@ namespace Pedidos
             
         }
 
-        private void CRUD_Clientes_Load(object sender, EventArgs e)
-        {
-            dataGridCRUDCliente.DataSource = objneg.N_listar_clientesCRUD();
-
-            
-        }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -121,36 +116,39 @@ namespace Pedidos
                 objent.Nombre = textBoxBuscarCRUD.Text;
                 DataTable dt = new DataTable();
                 dt = objneg.N_buscar_clientesCRUD(objent);
-                dataGridCRUDCliente.DataSource = dt;
+                lista.DataSource = dt;
             }
             else
             {
-                dataGridCRUDCliente.DataSource = objneg.N_listar_clientesCRUD();
+                lista.DataSource = objneg.N_listar_clientesCRUD();
             }
         }
 
-        private void dataGridCRUDCliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
+       
+
+        private void CRUD_Clientes_Load(object sender, EventArgs e)
         {
+            lista.DataSource = objneg.N_listar_clientesCRUD();
+        }
 
-            if (dataGridCRUDCliente.RowCount != 0)
-            {
-                int fila = dataGridCRUDCliente.CurrentCell.RowIndex;
+        private void lista_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int fila = lista.CurrentCell.RowIndex;
 
-                textBoxIDCRUD.Text = dataGridCRUDCliente[0, fila].Value.ToString();
-                textBoxTipoDocuementoCRUD.Text = dataGridCRUDCliente[1, fila].Value.ToString();
-                textBoxNDocumentoCRUD.Text = dataGridCRUDCliente[2, fila].Value.ToString();
-                textBoxFechaNacimientoCRUD.Text = dataGridCRUDCliente[3, fila].Value.ToString();
-                textBoxNombreCRUD.Text = dataGridCRUDCliente[4, fila].Value.ToString();
-                textBoxEmailCRUD.Text = dataGridCRUDCliente[5, fila].Value.ToString();
-                textBoxCiudadCRUD.Text = dataGridCRUDCliente[6, fila].Value.ToString();
-                textBoxPaisCRUD.Text = dataGridCRUDCliente[7, fila].Value.ToString();
-                textBoxDepartamentoCRUD.Text = dataGridCRUDCliente[8, fila].Value.ToString();
-                textBoxDireccionCRUD.Text = dataGridCRUDCliente[9, fila].Value.ToString();
-                textBoxTelefonoCRUD.Text = dataGridCRUDCliente[10, fila].Value.ToString();
-                textBoxCargoCRUD.Text = dataGridCRUDCliente[11, fila].Value.ToString();
-                textBoxContrasenaCRUD.Text = dataGridCRUDCliente[12, fila].Value.ToString();
-                textBoxTipoPersonaCRUD.Text = dataGridCRUDCliente[13, fila].Value.ToString();
-            }
+            textBoxIDCRUD.Text = lista[0, fila].Value.ToString();
+            textBoxTipoDocuementoCRUD.Text = lista[1, fila].Value.ToString();
+            textBoxNDocumentoCRUD.Text = lista[2, fila].Value.ToString();
+            textBoxFechaNacimientoCRUD.Text = lista[3, fila].Value.ToString();
+            textBoxNombreCRUD.Text = lista[4, fila].Value.ToString();
+            textBoxEmailCRUD.Text = lista[5, fila].Value.ToString();
+            textBoxCiudadCRUD.Text = lista[6, fila].Value.ToString();
+            textBoxPaisCRUD.Text = lista[7, fila].Value.ToString();
+            textBoxDepartamentoCRUD.Text = lista[8, fila].Value.ToString();
+            textBoxDireccionCRUD.Text = lista[9, fila].Value.ToString();
+            textBoxTelefonoCRUD.Text = lista[10, fila].Value.ToString();
+            textBoxCargoCRUD.Text = lista[11, fila].Value.ToString();
+            textBoxContrasenaCRUD.Text = lista[12, fila].Value.ToString();
+            textBoxTipoPersonaCRUD.Text = lista[13, fila].Value.ToString();
         }
     }
 }

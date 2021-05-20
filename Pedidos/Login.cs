@@ -69,7 +69,8 @@ namespace Pedidos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            p_logueo();
+            Form ob = new Principal();
+            ob.Show();
             
         }
 

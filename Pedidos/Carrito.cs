@@ -260,6 +260,9 @@ namespace Pedidos
             calc.WaitForExit();
         }
 
-     
+        private void Carrito_Load(object sender, EventArgs e)
+        {
+            listar.DataSource = segundo.N_listar_pedidos();
+        }
     }
 }

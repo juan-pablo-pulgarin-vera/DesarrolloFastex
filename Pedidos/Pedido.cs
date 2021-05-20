@@ -62,27 +62,9 @@ namespace Pedidos
             obj.puma1();
             obj.Show();
         }
-        private void Formpe_Load(object sender, EventArgs e)
-        {
-            if (Login.area == "Vendedor")
+    
 
-            {
-                btlVendedor.Enabled = true;
-
-            }
-
-
-            else if (Login.area == "Cliente")
-
-            {
-                btlVendedor.Enabled = false;
-
-            }
-        }
-
-        private void btlVendedor_Click(object sender, EventArgs e)
-        {
-            Application.Run(new CRUD_Clientes());
+     
         private void puma2_Click(object sender, EventArgs e)
         {
             Carrito obj = new Carrito();
@@ -125,7 +107,7 @@ namespace Pedidos
             obj.Show();
         }
 
-        private void adidas3_Click(object sender, EventArgs e)
+        public void adidas3_Click()
         {
             Carrito obj = new Carrito();
 
@@ -141,7 +123,9 @@ namespace Pedidos
             obj.Show();
         }
 
-        private void exit_Click(object sender, EventArgs e)
+       
+
+        private void exit_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }

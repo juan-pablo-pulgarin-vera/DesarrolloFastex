@@ -16,12 +16,12 @@ namespace Capa_Datos
 {
     public class ClaseDatosDairo
     {
-        SqlConnection cnn = new SqlConnection(ConfigurationManager.ConnectionStrings["sql"].ConnectionString);
+        SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["cnn"].ConnectionString);
 
         public String D_Registro(ClaseEntidadDairo obje)
         {
             String accion = "";
-            SqlCommand cmd = new SqlCommand("sp_registro", cnn);
+            SqlCommand cmd = new SqlCommand("sp_registro", cn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@IdPersona", obje.IdPersona);
             cmd.Parameters.AddWithValue("@TipoDocumento", obje.TipoDocumento);
@@ -39,11 +39,11 @@ namespace Capa_Datos
             cmd.Parameters.AddWithValue("@TipoPersona", obje.TipoPersona);
             cmd.Parameters.Add("@accion", SqlDbType.VarChar, 50).Value = obje.accion;
             cmd.Parameters["@accion"].Direction = ParameterDirection.InputOutput;
-            if (cnn.State == ConnectionState.Open) cnn.Close();
-            cnn.Open();
+            if (cn.State == ConnectionState.Open) cn.Close();
+            cn.Open();
             cmd.ExecuteNonQuery();
             accion = cmd.Parameters["@accion"].Value.ToString();
-            cnn.Close();
+            cn.Close();
             return accion;
         }
 
@@ -51,8 +51,8 @@ namespace Capa_Datos
 
     public class ClaseDatosCRUDCliente
     {
-        
-        SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sql"].ConnectionString);
+
+        SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["cnn"].ConnectionString);
 
         public DataTable D_listar_clientesCRUD()
         {
@@ -93,14 +93,36 @@ namespace Capa_Datos
             cmd.Parameters.AddWithValue("@Cargo", obje.Cargo);
             cmd.Parameters.AddWithValue("@Contrasena", obje.Contrasena);
             cmd.Parameters.AddWithValue("@TipoPersona", obje.TipoPersona);
+            cmd.Parameters.Add("@accion", SqlDbType.VarChar, 50).Value = obje.accion;
+            cmd.Parameters["@accion"].Direction = ParameterDirection.InputOutput;
+            if (cn.State == ConnectionState.Open) cn.Close();
+            cn.Open();
+            cmd.ExecuteNonQuery();
+            accion = cmd.Parameters["@accion"].Value.ToString();
+            cn.Close();
+            return accion;
+        }
+    }
+    public class D_ClaseEntidadLogin
+    {
 
-using System.Data;
-using System.Data.SqlClient;
-using System.Configuration;
-using Capa_Entidad;
+        SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["cnn"].ConnectionString);
 
-namespace Capa_Datos
-{
+        public DataTable D_user(ClaseEntidadLogin obje)
+        {
+
+            SqlCommand cmd = new SqlCommand("sp_login", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@usuario", obje.NDocumento);
+            cmd.Parameters.AddWithValue("@contrasena", obje.Contrasena);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+    }
+
 
     public class ClaseDatosJuanpablo
     {
@@ -186,22 +208,52 @@ namespace Capa_Datos
 
         
     }
-    
-    public class ClaseDatosLogin
-    {
-        SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sql"].ConnectionString);
 
-        public DataTable D_user(ClaseEntidadLogin obje)
+    public class YesicaD
+    {
+        SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["cnn"].ConnectionString);
+
+        public DataTable D_Listar_Productos()
         {
-            SqlCommand cmd = new SqlCommand("sp_login", cn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@usuario", obje.NDocumento);
-            cmd.Parameters.AddWithValue("@contrasena", obje.Contrasena);
+            SqlCommand cmd = new SqlCommand("sp_listarproductos", cn);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
             return dt;
         }
+
+        public DataTable D_Buscar_Productos(YesicaE obje)
+        {
+            SqlCommand cmd = new SqlCommand("sp_buscarproductos", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@nombre", obje.nombre);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public String D_Mantenimiento_Productos(YesicaE obje)
+        {
+            string movimiento = "";
+            SqlCommand cmd = new SqlCommand("sp_mantenimientoproductos", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Idproducto", obje.identificador);
+            cmd.Parameters.AddWithValue("@Marcaproducto", obje.marca);
+            cmd.Parameters.AddWithValue("@Nombreproducto", obje.nombre);
+            cmd.Parameters.AddWithValue("@Talla", obje.talla);
+            cmd.Parameters.AddWithValue("@Color", obje.color);
+            cmd.Parameters.AddWithValue("@Preciounidad", obje.preciounidad);
+            cmd.Parameters.Add("@movimiento", SqlDbType.VarChar, 50).Value = obje.movimiento;
+            cmd.Parameters["@movimiento"].Direction = ParameterDirection.InputOutput;
+            if (cn.State == ConnectionState.Open) cn.Close();
+            cn.Open();
+            cmd.ExecuteNonQuery();
+            movimiento = cmd.Parameters["@movimiento"].Value.ToString();
+            cn.Close();
+            return movimiento;
+        }
     }
+
 }
 

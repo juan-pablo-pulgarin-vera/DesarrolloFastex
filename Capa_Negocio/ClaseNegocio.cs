@@ -42,22 +42,19 @@ namespace Capa_Negocio
 
     }
 
+
     public class ClaseNegocioLogin
     {
-        ClaseDatosLogin objd = new ClaseDatosLogin();
+
+        D_ClaseEntidadLogin objd = new  D_ClaseEntidadLogin();
 
         public DataTable N_user(ClaseEntidadLogin obje)
         {
             return objd.D_user(obje);
-        }
+        } 
+    }
 
 
-using System.Data;
-using Capa_Datos;
-using Capa_Entidad;
-
-namespace Capa_Negocio
-{
 
 
     public class ClaseNegocioJuanpablo
@@ -86,4 +83,26 @@ namespace Capa_Negocio
             return objd.D_mantenimiento_Detallepedido(obje);
         }
     }
+
+    public class YesicaN
+    {
+        YesicaD objd = new YesicaD();
+
+        public DataTable N_Listar_Productos()
+        {
+            return objd.D_Listar_Productos();
+        }
+
+        public DataTable N_Buscar_Productos(YesicaE obje)
+        {
+            return objd.D_Buscar_Productos(obje);
+        }
+
+        public string N_Mantenimiento_Productos(YesicaE obje)
+        {
+            return objd.D_Mantenimiento_Productos(obje);
+        }
+
+    }
+
 }

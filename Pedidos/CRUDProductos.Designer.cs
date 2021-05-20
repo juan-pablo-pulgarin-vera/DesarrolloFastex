@@ -34,37 +34,35 @@ namespace Pedidos
             this.pcbSalir = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gbxDetallesproductos = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.identidicador1 = new System.Windows.Forms.TextBox();
+            this.label = new System.Windows.Forms.Label();
+            this.preciounidad = new System.Windows.Forms.TextBox();
+            this.nombre = new System.Windows.Forms.TextBox();
+            this.marca = new System.Windows.Forms.TextBox();
+            this.talla = new System.Windows.Forms.TextBox();
+            this.color = new System.Windows.Forms.TextBox();
             this.lblColorproducto = new System.Windows.Forms.Label();
             this.lblpreciounidad = new System.Windows.Forms.Label();
             this.lblTallaproducto = new System.Windows.Forms.Label();
             this.lblMarcaProducto = new System.Windows.Forms.Label();
             this.lblNombreproducto = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lista = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.bus = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.bttnNuevo = new System.Windows.Forms.Button();
             this.bttnModificar = new System.Windows.Forms.Button();
             this.bttnRegistrar = new System.Windows.Forms.Button();
             this.bttnEliminar = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSalir)).BeginInit();
             this.gbxDetallesproductos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lista)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -77,6 +75,7 @@ namespace Pedidos
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1350, 68);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pcbSalir
             // 
@@ -90,6 +89,7 @@ namespace Pedidos
             this.pcbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbSalir.TabIndex = 1;
             this.pcbSalir.TabStop = false;
+            this.pcbSalir.Click += new System.EventHandler(this.pcbSalir_Click);
             // 
             // label1
             // 
@@ -103,19 +103,18 @@ namespace Pedidos
             // 
             // gbxDetallesproductos
             // 
-            this.gbxDetallesproductos.Controls.Add(this.pictureBox2);
-            this.gbxDetallesproductos.Controls.Add(this.textBox6);
-            this.gbxDetallesproductos.Controls.Add(this.textBox5);
-            this.gbxDetallesproductos.Controls.Add(this.textBox4);
-            this.gbxDetallesproductos.Controls.Add(this.textBox3);
-            this.gbxDetallesproductos.Controls.Add(this.textBox2);
-            this.gbxDetallesproductos.Controls.Add(this.textBox1);
+            this.gbxDetallesproductos.Controls.Add(this.identidicador1);
+            this.gbxDetallesproductos.Controls.Add(this.label);
+            this.gbxDetallesproductos.Controls.Add(this.preciounidad);
+            this.gbxDetallesproductos.Controls.Add(this.nombre);
+            this.gbxDetallesproductos.Controls.Add(this.marca);
+            this.gbxDetallesproductos.Controls.Add(this.talla);
+            this.gbxDetallesproductos.Controls.Add(this.color);
             this.gbxDetallesproductos.Controls.Add(this.lblColorproducto);
             this.gbxDetallesproductos.Controls.Add(this.lblpreciounidad);
             this.gbxDetallesproductos.Controls.Add(this.lblTallaproducto);
             this.gbxDetallesproductos.Controls.Add(this.lblMarcaProducto);
             this.gbxDetallesproductos.Controls.Add(this.lblNombreproducto);
-            this.gbxDetallesproductos.Controls.Add(this.label2);
             this.gbxDetallesproductos.Font = new System.Drawing.Font("Bell MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxDetallesproductos.Location = new System.Drawing.Point(47, 269);
             this.gbxDetallesproductos.Name = "gbxDetallesproductos";
@@ -124,64 +123,73 @@ namespace Pedidos
             this.gbxDetallesproductos.TabStop = false;
             this.gbxDetallesproductos.Text = "Detalles productos ";
             // 
-            // textBox6
+            // identidicador1
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Location = new System.Drawing.Point(140, 279);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(256, 25);
-            this.textBox6.TabIndex = 11;
+            this.identidicador1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.identidicador1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.identidicador1.Location = new System.Drawing.Point(147, 43);
+            this.identidicador1.Name = "identidicador1";
+            this.identidicador1.Size = new System.Drawing.Size(256, 25);
+            this.identidicador1.TabIndex = 13;
             // 
-            // textBox5
+            // label
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(140, 74);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(256, 25);
-            this.textBox5.TabIndex = 10;
+            this.label.AutoSize = true;
+            this.label.Location = new System.Drawing.Point(36, 43);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(97, 18);
+            this.label.TabIndex = 12;
+            this.label.Text = "Identificador:";
             // 
-            // textBox4
+            // preciounidad
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(140, 130);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(256, 25);
-            this.textBox4.TabIndex = 9;
+            this.preciounidad.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.preciounidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.preciounidad.Location = new System.Drawing.Point(147, 282);
+            this.preciounidad.Name = "preciounidad";
+            this.preciounidad.Size = new System.Drawing.Size(256, 25);
+            this.preciounidad.TabIndex = 11;
             // 
-            // textBox3
+            // nombre
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(140, 179);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(256, 25);
-            this.textBox3.TabIndex = 8;
+            this.nombre.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.nombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nombre.Location = new System.Drawing.Point(147, 77);
+            this.nombre.Name = "nombre";
+            this.nombre.Size = new System.Drawing.Size(256, 25);
+            this.nombre.TabIndex = 10;
             // 
-            // textBox2
+            // marca
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(140, 235);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(256, 25);
-            this.textBox2.TabIndex = 7;
+            this.marca.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.marca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marca.Location = new System.Drawing.Point(147, 133);
+            this.marca.Name = "marca";
+            this.marca.Size = new System.Drawing.Size(256, 25);
+            this.marca.TabIndex = 9;
             // 
-            // textBox1
+            // talla
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(140, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(256, 25);
-            this.textBox1.TabIndex = 6;
+            this.talla.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.talla.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.talla.Location = new System.Drawing.Point(147, 182);
+            this.talla.Name = "talla";
+            this.talla.Size = new System.Drawing.Size(256, 25);
+            this.talla.TabIndex = 8;
+            // 
+            // color
+            // 
+            this.color.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.color.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.color.Location = new System.Drawing.Point(147, 238);
+            this.color.Name = "color";
+            this.color.Size = new System.Drawing.Size(256, 25);
+            this.color.TabIndex = 7;
             // 
             // lblColorproducto
             // 
             this.lblColorproducto.AutoSize = true;
-            this.lblColorproducto.Location = new System.Drawing.Point(29, 235);
+            this.lblColorproducto.Location = new System.Drawing.Point(36, 238);
             this.lblColorproducto.Name = "lblColorproducto";
             this.lblColorproducto.Size = new System.Drawing.Size(48, 18);
             this.lblColorproducto.TabIndex = 5;
@@ -190,7 +198,7 @@ namespace Pedidos
             // lblpreciounidad
             // 
             this.lblpreciounidad.AutoSize = true;
-            this.lblpreciounidad.Location = new System.Drawing.Point(29, 286);
+            this.lblpreciounidad.Location = new System.Drawing.Point(36, 289);
             this.lblpreciounidad.Name = "lblpreciounidad";
             this.lblpreciounidad.Size = new System.Drawing.Size(102, 18);
             this.lblpreciounidad.TabIndex = 4;
@@ -199,7 +207,7 @@ namespace Pedidos
             // lblTallaproducto
             // 
             this.lblTallaproducto.AutoSize = true;
-            this.lblTallaproducto.Location = new System.Drawing.Point(29, 182);
+            this.lblTallaproducto.Location = new System.Drawing.Point(36, 185);
             this.lblTallaproducto.Name = "lblTallaproducto";
             this.lblTallaproducto.Size = new System.Drawing.Size(45, 18);
             this.lblTallaproducto.TabIndex = 3;
@@ -208,7 +216,7 @@ namespace Pedidos
             // lblMarcaProducto
             // 
             this.lblMarcaProducto.AutoSize = true;
-            this.lblMarcaProducto.Location = new System.Drawing.Point(29, 130);
+            this.lblMarcaProducto.Location = new System.Drawing.Point(36, 133);
             this.lblMarcaProducto.Name = "lblMarcaProducto";
             this.lblMarcaProducto.Size = new System.Drawing.Size(54, 18);
             this.lblMarcaProducto.TabIndex = 2;
@@ -217,34 +225,26 @@ namespace Pedidos
             // lblNombreproducto
             // 
             this.lblNombreproducto.AutoSize = true;
-            this.lblNombreproducto.Location = new System.Drawing.Point(29, 77);
+            this.lblNombreproducto.Location = new System.Drawing.Point(36, 80);
             this.lblNombreproducto.Name = "lblNombreproducto";
             this.lblNombreproducto.Size = new System.Drawing.Size(66, 18);
             this.lblNombreproducto.TabIndex = 1;
             this.lblNombreproducto.Text = "Nombre:";
             // 
-            // label2
+            // lista
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 18);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Identificador:";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 27);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(790, 393);
-            this.dataGridView1.TabIndex = 2;
+            this.lista.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lista.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.lista.Location = new System.Drawing.Point(6, 27);
+            this.lista.Name = "lista";
+            this.lista.Size = new System.Drawing.Size(790, 393);
+            this.lista.TabIndex = 2;
+            this.lista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.lista_CellContentClick);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.lista);
             this.groupBox1.Font = new System.Drawing.Font("Bell MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(522, 245);
             this.groupBox1.Name = "groupBox1";
@@ -265,7 +265,7 @@ namespace Pedidos
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.bus);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Font = new System.Drawing.Font("Bell MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(522, 118);
@@ -275,14 +275,15 @@ namespace Pedidos
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Buscar";
             // 
-            // textBox7
+            // bus
             // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Location = new System.Drawing.Point(179, 44);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(404, 29);
-            this.textBox7.TabIndex = 1;
+            this.bus.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.bus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bus.Location = new System.Drawing.Point(179, 44);
+            this.bus.Name = "bus";
+            this.bus.Size = new System.Drawing.Size(404, 29);
+            this.bus.TabIndex = 1;
+            this.bus.TextChanged += new System.EventHandler(this.bus_TextChanged);
             // 
             // label3
             // 
@@ -304,6 +305,7 @@ namespace Pedidos
             this.bttnNuevo.TabIndex = 7;
             this.bttnNuevo.Text = "Nuevo";
             this.bttnNuevo.UseVisualStyleBackColor = false;
+            this.bttnNuevo.Click += new System.EventHandler(this.bttnNuevo_Click);
             // 
             // bttnModificar
             // 
@@ -316,6 +318,7 @@ namespace Pedidos
             this.bttnModificar.TabIndex = 8;
             this.bttnModificar.Text = "Modificar";
             this.bttnModificar.UseVisualStyleBackColor = false;
+            this.bttnModificar.Click += new System.EventHandler(this.bttnModificar_Click);
             // 
             // bttnRegistrar
             // 
@@ -328,6 +331,7 @@ namespace Pedidos
             this.bttnRegistrar.TabIndex = 9;
             this.bttnRegistrar.Text = "Registrar";
             this.bttnRegistrar.UseVisualStyleBackColor = false;
+            this.bttnRegistrar.Click += new System.EventHandler(this.bttnRegistrar_Click);
             // 
             // bttnEliminar
             // 
@@ -340,14 +344,7 @@ namespace Pedidos
             this.bttnEliminar.TabIndex = 10;
             this.bttnEliminar.Text = "Eliminar";
             this.bttnEliminar.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(6, 26);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(18, 23);
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
+            this.bttnEliminar.Click += new System.EventHandler(this.bttnEliminar_Click);
             // 
             // lblIdentificadorproducto
             // 
@@ -371,12 +368,11 @@ namespace Pedidos
             ((System.ComponentModel.ISupportInitialize)(this.pcbSalir)).EndInit();
             this.gbxDetallesproductos.ResumeLayout(false);
             this.gbxDetallesproductos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lista)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -390,25 +386,24 @@ namespace Pedidos
         private System.Windows.Forms.Label lblTallaproducto;
         private System.Windows.Forms.Label lblMarcaProducto;
         private System.Windows.Forms.Label lblNombreproducto;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblColorproducto;
         private System.Windows.Forms.Label lblpreciounidad;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView lista;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox preciounidad;
+        private System.Windows.Forms.TextBox nombre;
+        private System.Windows.Forms.TextBox marca;
+        private System.Windows.Forms.TextBox talla;
+        private System.Windows.Forms.TextBox color;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox bus;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button bttnNuevo;
         private System.Windows.Forms.Button bttnModificar;
         private System.Windows.Forms.Button bttnRegistrar;
         private System.Windows.Forms.Button bttnEliminar;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox identidicador1;
+        private System.Windows.Forms.Label label;
     }
 }
