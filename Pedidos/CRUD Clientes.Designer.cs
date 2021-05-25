@@ -44,10 +44,10 @@ namespace Pedidos
             this.textBoxCargoCRUD = new System.Windows.Forms.TextBox();
             this.textBoxTipoPersonaCRUD = new System.Windows.Forms.TextBox();
             this.textBoxBuscarCRUD = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btlnuevo = new System.Windows.Forms.Button();
+            this.btlregistrar = new System.Windows.Forms.Button();
+            this.btlmodificar = new System.Windows.Forms.Button();
+            this.btleliminar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lista = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
@@ -162,53 +162,53 @@ namespace Pedidos
             this.textBoxBuscarCRUD.TabIndex = 15;
             this.textBoxBuscarCRUD.TextChanged += new System.EventHandler(this.textBoxBuscarCRUD_TextChanged);
             // 
-            // button1
+            // btlnuevo
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(227)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(915, 639);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 33);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Nuevo";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btlnuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(227)))));
+            this.btlnuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btlnuevo.Location = new System.Drawing.Point(915, 639);
+            this.btlnuevo.Name = "btlnuevo";
+            this.btlnuevo.Size = new System.Drawing.Size(82, 33);
+            this.btlnuevo.TabIndex = 16;
+            this.btlnuevo.Text = "Nuevo";
+            this.btlnuevo.UseVisualStyleBackColor = false;
+            this.btlnuevo.Click += new System.EventHandler(this.btlnuevo_Click);
             // 
-            // button2
+            // btlregistrar
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(227)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(1021, 639);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(82, 33);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Registrar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btlregistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(227)))));
+            this.btlregistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btlregistrar.Location = new System.Drawing.Point(1021, 639);
+            this.btlregistrar.Name = "btlregistrar";
+            this.btlregistrar.Size = new System.Drawing.Size(82, 33);
+            this.btlregistrar.TabIndex = 17;
+            this.btlregistrar.Text = "Registrar";
+            this.btlregistrar.UseVisualStyleBackColor = false;
+            this.btlregistrar.Click += new System.EventHandler(this.btlregistrar_Click);
             // 
-            // button3
+            // btlmodificar
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(227)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(1132, 639);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(82, 33);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "Modificar ";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btlmodificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(227)))));
+            this.btlmodificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btlmodificar.Location = new System.Drawing.Point(1132, 639);
+            this.btlmodificar.Name = "btlmodificar";
+            this.btlmodificar.Size = new System.Drawing.Size(82, 33);
+            this.btlmodificar.TabIndex = 18;
+            this.btlmodificar.Text = "Modificar ";
+            this.btlmodificar.UseVisualStyleBackColor = false;
+            this.btlmodificar.Click += new System.EventHandler(this.btlmodificar_Click);
             // 
-            // button4
+            // btleliminar
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(227)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(1243, 639);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(82, 33);
-            this.button4.TabIndex = 19;
-            this.button4.Text = "Eliminar";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btleliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(227)))));
+            this.btleliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btleliminar.Location = new System.Drawing.Point(1243, 639);
+            this.btleliminar.Name = "btleliminar";
+            this.btleliminar.Size = new System.Drawing.Size(82, 33);
+            this.btleliminar.TabIndex = 19;
+            this.btleliminar.Text = "Eliminar";
+            this.btleliminar.UseVisualStyleBackColor = false;
+            this.btleliminar.Click += new System.EventHandler(this.btleliminar_Click);
             // 
             // groupBox1
             // 
@@ -239,10 +239,10 @@ namespace Pedidos
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btleliminar);
+            this.Controls.Add(this.btlmodificar);
+            this.Controls.Add(this.btlregistrar);
+            this.Controls.Add(this.btlnuevo);
             this.Controls.Add(this.textBoxBuscarCRUD);
             this.Controls.Add(this.textBoxTipoPersonaCRUD);
             this.Controls.Add(this.textBoxCargoCRUD);
@@ -285,10 +285,10 @@ namespace Pedidos
         private System.Windows.Forms.TextBox textBoxCargoCRUD;
         private System.Windows.Forms.TextBox textBoxTipoPersonaCRUD;
         private System.Windows.Forms.TextBox textBoxBuscarCRUD;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btlnuevo;
+        private System.Windows.Forms.Button btlregistrar;
+        private System.Windows.Forms.Button btlmodificar;
+        private System.Windows.Forms.Button btleliminar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView lista;
     }

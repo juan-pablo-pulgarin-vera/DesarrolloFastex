@@ -62,52 +62,7 @@ namespace Pedidos
             
         }
 
-       
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            limpiar();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (textBoxIDCRUD.Text == "")
-            {
-                if (MessageBox.Show("¿Deseas registrar a " + textBoxNombreCRUD.Text + "?", "Mensaje",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
-                {
-                    mantenimientoCRUDClientes("1");
-                    limpiar();
-
-                }
-            }
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            if (textBoxIDCRUD.Text != "")
-            {
-                if (MessageBox.Show("¿Deseas modificar a " + textBoxNombreCRUD.Text + "?", "Mensaje",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
-                {
-                    mantenimientoCRUDClientes("2");
-                    limpiar();
-                }
-            }
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            if (textBoxIDCRUD.Text != "")
-            {
-                if (MessageBox.Show("¿Deseas eliminar a " + textBoxNombreCRUD.Text + "?", "Mensaje",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
-                {
-                    mantenimientoCRUDClientes("3");
-                    limpiar();
-                }
-            }
-        }
+      
 
         private void textBoxBuscarCRUD_TextChanged(object sender, EventArgs e)
         {
@@ -150,5 +105,50 @@ namespace Pedidos
             textBoxContrasenaCRUD.Text = lista[12, fila].Value.ToString();
             textBoxTipoPersonaCRUD.Text = lista[13, fila].Value.ToString();
         }
+
+        private void btlnuevo_Click(object sender, EventArgs e)
+        {
+            limpiar();
+        }
+
+        private void btlregistrar_Click(object sender, EventArgs e)
+        {
+            if (textBoxIDCRUD.Text == "")
+            {
+                if (MessageBox.Show("¿Deseas registrar a " + textBoxNombreCRUD.Text + "?", "Mensaje",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
+                {
+                    mantenimientoCRUDClientes("1");
+                    limpiar();
+
+                }
+            }
+        }
+
+        private void btlmodificar_Click(object sender, EventArgs e)
+        {
+            if (textBoxIDCRUD.Text != "")
+            {
+                if (MessageBox.Show("¿Deseas modificar a " + textBoxNombreCRUD.Text + "?", "Mensaje",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
+                {
+                    mantenimientoCRUDClientes("2");
+                    limpiar();
+                }
+            }
+        }
+
+        private void btleliminar_Click(object sender, EventArgs e)
+        {
+            if (textBoxIDCRUD.Text != "")
+            {
+                if (MessageBox.Show("¿Deseas eliminar a " + textBoxNombreCRUD.Text + "?", "Mensaje",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
+                {
+                    mantenimientoCRUDClientes("3");
+                    limpiar();
+                }
+            }
+        }  
     }
 }
