@@ -15,7 +15,7 @@ namespace Pedidos
         public Formpe()
         {
             InitializeComponent();
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+           
 
         }
 
@@ -65,57 +65,22 @@ namespace Pedidos
     
 
      
-        private void puma2_Click(object sender, EventArgs e)
-        {
-            Carrito obj = new Carrito();
+       
 
-            obj.puma2();
-            obj.Show();
+
+      
+
+      
+
+     
+
+
+        private void exit_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
-
-        private void puma3_Click(object sender, EventArgs e)
-        {
-            Carrito obj = new Carrito();
-
-            obj.puma3();
-            obj.Show();
-        }
-
-        private void puma4_Click(object sender, EventArgs e)
-        {
-            Carrito obj = new Carrito();
-
-            obj.puma3();
-            obj.Show();
-        }
-
-        private void adidas1_Click(object sender, EventArgs e)
-        {
-            Carrito obj = new Carrito();
-
-            obj.adidas1();
-            obj.Show();
-
-        }
-
-        private void adidas2_Click(object sender, EventArgs e)
-        {
-            Carrito obj = new Carrito();
-
-            obj.adidas2();
-            obj.Show();
-        }
-
-        public void adidas3_Click()
-        {
-            Carrito obj = new Carrito();
-
-            obj.adidas3();
-            obj.Show();
-        }
-
-        private void adidas4_Click(object sender, EventArgs e)
+        private void adidas4_Click_1(object sender, EventArgs e)
         {
             Carrito obj = new Carrito();
 
@@ -123,11 +88,53 @@ namespace Pedidos
             obj.Show();
         }
 
-       
-
-        private void exit_Click_1(object sender, EventArgs e)
+        private void adidas3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Carrito obj = new Carrito();
+
+            obj.adidas3();
+            obj.Show();
+        }
+
+        private void adidas2_Click_1(object sender, EventArgs e)
+        {
+
+            Carrito obj = new Carrito();
+
+            obj.adidas2();
+            obj.Show();
+        }
+
+        private void adidas1_Click_1(object sender, EventArgs e)
+        {
+            Carrito obj = new Carrito();
+
+            obj.adidas1();
+            obj.Show();
+        }
+
+        private void puma4_Click_1(object sender, EventArgs e)
+        {
+            Carrito obj = new Carrito();
+
+            obj.puma3();
+            obj.Show();
+        }
+
+        private void puma3_Click_1(object sender, EventArgs e)
+        {
+            Carrito obj = new Carrito();
+
+            obj.puma3();
+            obj.Show();
+        }
+
+        private void puma2_Click_1(object sender, EventArgs e)
+        {
+            Carrito obj = new Carrito();
+
+            obj.puma2();
+            obj.Show();
         }
     }
 }

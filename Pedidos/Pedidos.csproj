@@ -53,11 +53,11 @@
     <Compile Include="Carrito.Designer.cs">
       <DependentUpon>Carrito.cs</DependentUpon>
     </Compile>
-    <Compile Include="CRUD Clientes.cs">
+    <Compile Include="CrudCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CRUD Clientes.Designer.cs">
-      <DependentUpon>CRUD Clientes.cs</DependentUpon>
+    <Compile Include="CrudCliente.Designer.cs">
+      <DependentUpon>CrudCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -94,8 +94,8 @@
     <EmbeddedResource Include="Carrito.resx">
       <DependentUpon>Carrito.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CRUD Clientes.resx">
-      <DependentUpon>CRUD Clientes.cs</DependentUpon>
+    <EmbeddedResource Include="CrudCliente.resx">
+      <DependentUpon>CrudCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

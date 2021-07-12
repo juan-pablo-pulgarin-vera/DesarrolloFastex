@@ -18,7 +18,7 @@ namespace Pedidos
         public lblIdentificadorproducto()
         {
             InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
+            
         }
 
        

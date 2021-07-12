@@ -151,7 +151,7 @@ namespace Capa_Datos
             return dt;
 
         }
-        
+
         public string D_mantenimiento_pedido(claseEntidadJuanpablo obje)
         {
             string opcion = "";
@@ -176,7 +176,7 @@ namespace Capa_Datos
             return opcion;
 
         }
-       
+
 
         public string D_mantenimiento_Detallepedido(claseEntidadJuanpablo obje)
         {

@@ -31,8 +31,6 @@ namespace Pedidos
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.calculadora = new System.Windows.Forms.Button();
             this.telefono = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.flete = new System.Windows.Forms.TextBox();
@@ -103,8 +101,6 @@ namespace Pedidos
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Controls.Add(this.calculadora);
             this.groupBox1.Controls.Add(this.telefono);
             this.groupBox1.Controls.Add(this.label19);
             this.groupBox1.Controls.Add(this.flete);
@@ -132,26 +128,6 @@ namespace Pedidos
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DATOS CLIENTE";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(483, 273);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(239, 18);
-            this.label22.TabIndex = 42;
-            this.label22.Text = "total = (valor unidad*cantidad)+flete";
-            // 
-            // calculadora
-            // 
-            this.calculadora.Location = new System.Drawing.Point(509, 243);
-            this.calculadora.Name = "calculadora";
-            this.calculadora.Size = new System.Drawing.Size(182, 27);
-            this.calculadora.TabIndex = 19;
-            this.calculadora.Text = "abrir calculadora";
-            this.calculadora.UseVisualStyleBackColor = true;
-            this.calculadora.Click += new System.EventHandler(this.calculadora_Click);
             // 
             // telefono
             // 
@@ -191,6 +167,7 @@ namespace Pedidos
             this.valortotal.Name = "valortotal";
             this.valortotal.Size = new System.Drawing.Size(164, 26);
             this.valortotal.TabIndex = 14;
+            this.valortotal.TextChanged += new System.EventHandler(this.valortotal_TextChanged);
             // 
             // direccion
             // 
@@ -664,7 +641,5 @@ namespace Pedidos
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TextBox vende;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Button calculadora;
-        private System.Windows.Forms.Label label22;
     }
 }

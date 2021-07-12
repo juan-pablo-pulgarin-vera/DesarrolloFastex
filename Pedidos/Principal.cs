@@ -15,24 +15,34 @@ namespace Pedidos
         public Principal()
         {
             InitializeComponent();
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
         }
 
-        private void DCLIENTE_Click(object sender, EventArgs e)
+        private void mODIFICARCLIENTESToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form obj = new CRUD_Clientes();
+            Form obj = new CrudCliente();
+            obj.MdiParent= this;
             obj.Show();
+
+
         }
 
-        private void DPEDIDO_Click(object sender, EventArgs e)
+        private void cOMPRASToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form obj = new lblIdentificadorproducto();
+            obj.MdiParent = this;
             obj.Show();
+
         }
 
-        private void COM_Click(object sender, EventArgs e)
+        private void mODIFICARPEDIDOSToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form obj = new Formpe();
+            obj.MdiParent = this;
             obj.Show();
+
         }
+
+       
     }
 }

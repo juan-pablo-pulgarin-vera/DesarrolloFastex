@@ -85,6 +85,7 @@ namespace Pedidos
             this.Controls.Add(this.textBoxUsuarioLogin);
             this.Name = "Login";
             this.Text = "Login";
+      
             this.ResumeLayout(false);
             this.PerformLayout();
 

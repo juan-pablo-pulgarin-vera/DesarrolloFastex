@@ -29,105 +29,82 @@ namespace Pedidos
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.DCLIENTE = new System.Windows.Forms.Button();
-            this.DPEDIDO = new System.Windows.Forms.Button();
-            this.COM = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.mODIFICARCLIENTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cOMPRASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mODIFICARPEDIDOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-5, -46);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(762, 100);
-            this.panel1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(226, 55);
+            this.label1.Location = new System.Drawing.Point(604, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(340, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "BIENVENIDO A FASTEX";
             // 
-            // label2
+            // menuStrip1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(248, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(286, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Seleccione la tarea que desea realizar: ";
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mODIFICARCLIENTESToolStripMenuItem,
+            this.cOMPRASToolStripMenuItem,
+            this.mODIFICARPEDIDOSToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(944, 24);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // DCLIENTE
+            // mODIFICARCLIENTESToolStripMenuItem
             // 
-            this.DCLIENTE.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.DCLIENTE.Location = new System.Drawing.Point(45, 118);
-            this.DCLIENTE.Name = "DCLIENTE";
-            this.DCLIENTE.Size = new System.Drawing.Size(181, 23);
-            this.DCLIENTE.TabIndex = 2;
-            this.DCLIENTE.Text = "MODIFICAR DATOS CLIENTE ";
-            this.DCLIENTE.UseVisualStyleBackColor = false;
-            this.DCLIENTE.Click += new System.EventHandler(this.DCLIENTE_Click);
+            this.mODIFICARCLIENTESToolStripMenuItem.Name = "mODIFICARCLIENTESToolStripMenuItem";
+            this.mODIFICARCLIENTESToolStripMenuItem.Size = new System.Drawing.Size(137, 20);
+            this.mODIFICARCLIENTESToolStripMenuItem.Text = "MODIFICAR_CLIENTES";
+            this.mODIFICARCLIENTESToolStripMenuItem.Click += new System.EventHandler(this.mODIFICARCLIENTESToolStripMenuItem_Click);
             // 
-            // DPEDIDO
+            // cOMPRASToolStripMenuItem
             // 
-            this.DPEDIDO.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.DPEDIDO.Location = new System.Drawing.Point(547, 118);
-            this.DPEDIDO.Name = "DPEDIDO";
-            this.DPEDIDO.Size = new System.Drawing.Size(181, 23);
-            this.DPEDIDO.TabIndex = 3;
-            this.DPEDIDO.Text = "MODIFICAR DATOS PEDIDOS";
-            this.DPEDIDO.UseVisualStyleBackColor = false;
-            this.DPEDIDO.Click += new System.EventHandler(this.DPEDIDO_Click);
+            this.cOMPRASToolStripMenuItem.Name = "cOMPRASToolStripMenuItem";
+            this.cOMPRASToolStripMenuItem.Size = new System.Drawing.Size(154, 20);
+            this.cOMPRASToolStripMenuItem.Text = "MODIFICAR_PRODUCTOS";
+            this.cOMPRASToolStripMenuItem.Click += new System.EventHandler(this.cOMPRASToolStripMenuItem_Click);
             // 
-            // COM
+            // mODIFICARPEDIDOSToolStripMenuItem
             // 
-            this.COM.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.COM.Location = new System.Drawing.Point(297, 118);
-            this.COM.Name = "COM";
-            this.COM.Size = new System.Drawing.Size(181, 23);
-            this.COM.TabIndex = 4;
-            this.COM.Text = "COMPRAS";
-            this.COM.UseVisualStyleBackColor = false;
-            this.COM.Click += new System.EventHandler(this.COM_Click);
+            this.mODIFICARPEDIDOSToolStripMenuItem.Name = "mODIFICARPEDIDOSToolStripMenuItem";
+            this.mODIFICARPEDIDOSToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.mODIFICARPEDIDOSToolStripMenuItem.Text = "COMPRAS";
+            this.mODIFICARPEDIDOSToolStripMenuItem.Click += new System.EventHandler(this.mODIFICARPEDIDOSToolStripMenuItem_Click);
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(755, 192);
-            this.Controls.Add(this.COM);
-            this.Controls.Add(this.DPEDIDO);
-            this.Controls.Add(this.DCLIENTE);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(944, 192);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.IsMdiContainer = true;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button DCLIENTE;
-        private System.Windows.Forms.Button DPEDIDO;
-        private System.Windows.Forms.Button COM;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem mODIFICARCLIENTESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cOMPRASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mODIFICARPEDIDOSToolStripMenuItem;
     }
 }

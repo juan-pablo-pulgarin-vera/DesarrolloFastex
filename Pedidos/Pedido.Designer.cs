@@ -594,6 +594,7 @@ namespace Pedidos
             this.puma4.TabIndex = 38;
             this.puma4.Text = "AGREGAR CARRITO";
             this.puma4.UseVisualStyleBackColor = false;
+            this.puma4.Click += new System.EventHandler(this.puma4_Click_1);
             // 
             // label63
             // 
@@ -667,6 +668,7 @@ namespace Pedidos
             this.puma3.TabIndex = 30;
             this.puma3.Text = "AGREGAR CARRITO";
             this.puma3.UseVisualStyleBackColor = false;
+            this.puma3.Click += new System.EventHandler(this.puma3_Click_1);
             // 
             // label33
             // 
@@ -740,6 +742,7 @@ namespace Pedidos
             this.puma2.TabIndex = 22;
             this.puma2.Text = "AGREGAR CARRITO";
             this.puma2.UseVisualStyleBackColor = false;
+            this.puma2.Click += new System.EventHandler(this.puma2_Click_1);
             // 
             // label27
             // 
@@ -929,6 +932,7 @@ namespace Pedidos
             this.adidas4.TabIndex = 38;
             this.adidas4.Text = "AGREGAR CARRITO";
             this.adidas4.UseVisualStyleBackColor = false;
+            this.adidas4.Click += new System.EventHandler(this.adidas4_Click_1);
             // 
             // label57
             // 
@@ -1002,6 +1006,7 @@ namespace Pedidos
             this.adidas3.TabIndex = 30;
             this.adidas3.Text = "AGREGAR CARRITO";
             this.adidas3.UseVisualStyleBackColor = false;
+            this.adidas3.Click += new System.EventHandler(this.adidas3_Click);
             // 
             // label39
             // 
@@ -1075,6 +1080,7 @@ namespace Pedidos
             this.adidas2.TabIndex = 22;
             this.adidas2.Text = "AGREGAR CARRITO";
             this.adidas2.UseVisualStyleBackColor = false;
+            this.adidas2.Click += new System.EventHandler(this.adidas2_Click_1);
             // 
             // label45
             // 
@@ -1148,6 +1154,7 @@ namespace Pedidos
             this.adidas1.TabIndex = 14;
             this.adidas1.Text = "AGREGAR CARRITO";
             this.adidas1.UseVisualStyleBackColor = false;
+            this.adidas1.Click += new System.EventHandler(this.adidas1_Click_1);
             // 
             // label51
             // 
@@ -1220,7 +1227,6 @@ namespace Pedidos
             this.Name = "Formpe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ZAPATOS ";
-
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();

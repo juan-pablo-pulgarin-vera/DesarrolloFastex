@@ -17,7 +17,7 @@ namespace Pedidos
     {
         ClaseEntidadLogin objeuser = new ClaseEntidadLogin();
         ClaseNegocioLogin objnuser = new ClaseNegocioLogin();
-        CRUD_Clientes  form1 = new CRUD_Clientes();
+        Principal form1 = new Principal();
         public Login()
         {
             InitializeComponent();
@@ -48,7 +48,7 @@ namespace Pedidos
                 login.ShowDialog();
 
                 if (login.DialogResult == DialogResult.OK)
-                    Application.Run(new Formpe());
+                    Application.Run(new Principal());
                 
                
 
@@ -69,8 +69,8 @@ namespace Pedidos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form ob = new Principal();
-            ob.Show();
+            p_logueo();
+            
             
         }
 
@@ -81,5 +81,7 @@ namespace Pedidos
 
             Login form1 = new Login();
         }
+
+        
     }
 }

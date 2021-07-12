@@ -251,18 +251,25 @@ namespace Pedidos
            
         }
 
-        private void calculadora_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process calc = new System.Diagnostics.Process { StartInfo = { FileName = @"calc.exe" } };
-            calc.Start();
-
-
-            calc.WaitForExit();
-        }
+       
 
         private void Carrito_Load(object sender, EventArgs e)
         {
             listar.DataSource = segundo.N_listar_pedidos();
+        }
+
+     
+        private void valortotal_TextChanged(object sender, EventArgs e)
+        {
+
+            double valorDos = Convert.ToDouble(cantidad.Text);
+            double valorTres = Convert.ToDouble(flete.Text);
+            double valorUno = Convert.ToDouble(valorunid.Text);
+
+            double resul = (valorUno * valorDos) + valorTres;
+            valortotal.Text = Convert.ToString(resul);
+
+
         }
     }
 }
